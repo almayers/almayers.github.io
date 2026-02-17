@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Webpage</title>
+  <meta charset="UTF-8">
+<body>
+</head>
+  <h1>Welcome to my site<h1>
+  <p>This is my first paragraph
+  <img src="image.jpg" alt="A sample image">
+  <a href="page2.html">Go to Page 2</a
+</body>
+</html>

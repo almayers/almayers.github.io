@@ -8,12 +8,14 @@ h1 {
     color: #64748B;   
     font-size: 36px;  
     font-family: Poppins, sans-serif;
+    text-align: center;
 }
 
 h3 {
     color: #14B8A6;   
     font-size: 24px; 
     font-family: Poppins, sans-serif;
+    text-align: center;
 }
 p {
   color: #64748B;

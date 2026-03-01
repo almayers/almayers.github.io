@@ -15,8 +15,10 @@ h3 {
     font-size: 24px; 
     font-family: Poppins, sans-serif;
 }
-    p {
+p {
   color: #64748B;
   font-size: 18px;
+
+.hero {text-align: center,}
 }
-}
+

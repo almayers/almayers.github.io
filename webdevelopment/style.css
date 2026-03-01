@@ -3,7 +3,7 @@ body {
     color: #64748B;                
     font-size: 18px; 
     background-image: url("image/background1.jpg");
-    .hero {text-align: center;
+    
 }
 h1 {
     color: #64748B;   
@@ -23,5 +23,6 @@ p {
   font-size: 18px;
 
 }
+.hero {text-align: center;}
 
 

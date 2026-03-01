@@ -6,11 +6,13 @@ body {
 h1 {
     color: #64748B;   
     font-size: 36px;  
+    font-family: Poppins, sans-serif;
 }
 
 h3 {
     color: #14B8A6;   
     font-size: 24px; 
+    font-family: Poppins, sans-serif;
 }
     p {
   color: #57573b;

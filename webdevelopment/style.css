@@ -16,6 +16,10 @@ h1 {
 }
 footer p { 
     color: #14B8A6;}
+
+footer {
+    position:relative;
+    z-index: 1; }
         
 h3 {
     color: #64748B;   

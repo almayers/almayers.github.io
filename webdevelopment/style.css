@@ -3,6 +3,9 @@ body {
     color: #64748B;                
     font-size: 18px; 
     background-image: url("image/background1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     
 }
 h1 {
@@ -12,7 +15,7 @@ h1 {
     text-align: center;
 }
 footer { 
-    color: #14B8A6 }
+    color: #14B8A6;}
         
 h3 {
     color: #64748B;   
@@ -26,7 +29,7 @@ p {
 
 }
 .hero {text-align: center;
-       color: #14B8A6}
+       color: #14B8A6;}
       
 
 

@@ -65,6 +65,19 @@ p {
     transition: background-color 0.3s ease;}
 
 .hero a:hover{background-color: #0f766e;}
-      
 
+ul {
+    list-style-type: square;
+    margin: 20px;
+    padding: 10px;
+}
+
+li {
+    font-size: 28px;
+    color: #14B8A6;
+}
+      
+li:hover {
+    color: white;
+}
 

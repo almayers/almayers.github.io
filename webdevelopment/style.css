@@ -66,6 +66,35 @@ p {
 
 .hero a:hover{background-color: #0f766e;}
 
+.reflection-box {
+  background-color: #f8fafc;
+  border: 3px solid #64748B;
+  padding: 25px;
+  margin: 40px;
+  border-radius: 10px;
+}
+
+.first-paragraph::first-letter {
+  font-size: 200%;
+  color: #14B8A6;
+  font-weight: bold;
+}
+
+.reflection-box p {
+  text-indent: 30px;
+  line-height: 1.6;
+}
+.resources li {
+  margin-bottom: 10px;
+}
+
+.resources a {
+  color: #1E3A8A;
+}
+
+.resources a:hover {
+  color: #14B8A6;
+}
 ul {
     list-style-type: square;
     margin: 20px;

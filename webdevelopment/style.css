@@ -109,4 +109,22 @@ li {
 li:hover {
     color: white;
 }
+.profile-img {
+  width: 250px;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.resume-video {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
 

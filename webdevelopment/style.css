@@ -142,37 +142,22 @@ li:hover {
   transform: scale(1.05);
   transition: 0.3s ease;
 }
-
-
-/* =========================
-   PRINT STYLES (About Page)
-   ========================= */
 @media print {
-
-  /* 1-inch margins */
   @page {
     margin: 1in;
   }
-
-  /* Hide everything */
   body * {
     visibility: hidden;
   }
-
-  /* Show only main content */
   main, main * {
     visibility: visible;
   }
-
-  /* Fix positioning */
   main {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
   }
-
-  /* Remove unwanted elements (FIXED) */
   header,
   nav,
   img,
@@ -184,14 +169,10 @@ li:hover {
     display: none;
     visibility: hidden;
   }
-
-  /* EXTRA safety for video */
   .resume-video {
     display: none !important;
     visibility: hidden !important;
   }
-
-  /* Keep required elements */
   h1,
   p,
   ul,
@@ -200,8 +181,6 @@ li:hover {
     color: black !important;
     font-family: "Times New Roman", Georgia, serif !important;
   }
-
-  /* Adjust sizes to fit one page */
   h1 {
     font-size: 22pt;
     text-align: left;
@@ -235,17 +214,3 @@ li:hover {
     background: white !important;
   }
 }
-🎯 What this fixes
-❌ Video showing on second page → ✅ completely hidden
-❌ Extra blank page → ✅ removed
-✅ Clean one-page print layout
-✅ Meets ALL assignment requirements
-🔍 Final check
-
-Open Print Preview (Ctrl + P) and confirm:
-
-Only text shows (no images/video/nav)
-Everything is black serif font
-Fits on ONE page
-
-If anything still spills to a second page, tell me what content is too long and I’ll tighten it perfectly.

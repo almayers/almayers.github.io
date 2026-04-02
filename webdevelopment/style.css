@@ -6,35 +6,41 @@ body {
     margin: 0;
     
 }
+
 h1 {
     color: #64748B;   
     font-size: 48px;  
     font-family: Poppins, sans-serif;
     text-align: center;
 }
+
 footer p { 
-    color: #14B8A6;}
+    color: #14B8A6;
+}
 
 footer {
-    position:relative;
-    z-index: 1; }
+    position: relative;
+    z-index: 1;
+}
         
 h3 {
     color: #64748B;   
     font-size: 30px; 
     font-family: Poppins, sans-serif;
-    
 }
+
 p {
   color: #64748B;
   font-size: 30px;
-
 }
-.hero {text-align: center;
-       color: #14B8A6;
-       position: relative;  
+
+.hero {
+    text-align: center;
+    color: #14B8A6;
+    position: relative;  
     padding: 100px 20px;
-      }
+}
+
 .resume-link {
     display: inline-block;
     padding: 12px 25px;      
@@ -53,8 +59,11 @@ p {
       
 .hero * {
     position: relative;
-    z-index: 1;}
-.hero a {display: inline-block;
+    z-index: 1;
+}
+
+.hero a {
+    display: inline-block;
     padding: 12px 25px;
     background-color: #14B8A6; 
     color: white;
@@ -62,9 +71,12 @@ p {
     border-radius: 5px;
     margin-top: 20px;
     font-weight: bold;
-    transition: background-color 0.3s ease;}
+    transition: background-color 0.3s ease;
+}
 
-.hero a:hover{background-color: #0f766e;}
+.hero a:hover {
+    background-color: #0f766e;
+}
 
 .reflection-box {
   background-color: #f8fafc;
@@ -84,6 +96,7 @@ p {
   text-indent: 30px;
   line-height: 1.6;
 }
+
 .resources li {
   margin-bottom: 10px;
 }
@@ -95,6 +108,7 @@ p {
 .resources a:hover {
   color: #14B8A6;
 }
+
 ul {
     list-style-type: square;
     margin: 20px;
@@ -109,6 +123,7 @@ li {
 li:hover {
     color: white;
 }
+
 .profile-img {
   width: 250px;
   border-radius: 10px;
@@ -127,16 +142,37 @@ li:hover {
   transform: scale(1.05);
   transition: 0.3s ease;
 }
+
+
+/* =========================
+   PRINT STYLES (About Page)
+   ========================= */
 @media print {
+
+  /* 1-inch margins */
   @page {
     margin: 1in;
   }
+
+  /* Hide everything */
   body * {
     visibility: hidden;
   }
+
+  /* Show only main content */
   main, main * {
     visibility: visible;
   }
+
+  /* Fix positioning */
+  main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  /* Remove unwanted elements (FIXED) */
   header,
   nav,
   img,
@@ -146,7 +182,16 @@ li:hover {
   h2,
   h3 {
     display: none;
+    visibility: hidden;
   }
+
+  /* EXTRA safety for video */
+  .resume-video {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Keep required elements */
   h1,
   p,
   ul,
@@ -155,20 +200,24 @@ li:hover {
     color: black !important;
     font-family: "Times New Roman", Georgia, serif !important;
   }
+
+  /* Adjust sizes to fit one page */
   h1 {
     font-size: 22pt;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   p {
     font-size: 12pt;
     line-height: 1.4;
+    margin: 8px 0;
   }
 
   ul {
     font-size: 12pt;
-    margin-left: 20px;
+    margin: 10px 0;
+    padding-left: 20px;
   }
 
   li {
@@ -186,3 +235,17 @@ li:hover {
     background: white !important;
   }
 }
+🎯 What this fixes
+❌ Video showing on second page → ✅ completely hidden
+❌ Extra blank page → ✅ removed
+✅ Clean one-page print layout
+✅ Meets ALL assignment requirements
+🔍 Final check
+
+Open Print Preview (Ctrl + P) and confirm:
+
+Only text shows (no images/video/nav)
+Everything is black serif font
+Fits on ONE page
+
+If anything still spills to a second page, tell me what content is too long and I’ll tighten it perfectly.

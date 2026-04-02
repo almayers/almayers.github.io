@@ -213,4 +213,15 @@ li:hover {
   body {
     background: white !important;
   }
+    .icon {
+  width: 20px;         
+  height: 20px;
+  vertical-align: middle; 
+  margin-right: 8px;   
+}
+.contact-info p {
+  display: flex;
+  align-items: center;  
+  gap: 8px;             
+}
 }

@@ -5,6 +5,7 @@ header {
   background-color: #1E3A8A; 
   padding: 12px 20px;
 }
+
 header img {
   height: 150px;
 }
@@ -15,34 +16,9 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-nav ul li ul.dropdown {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    list-style: none;
-    padding: 0;
-}
-nav ul li:hover ul.dropdown {
-    display: block;
-}
-nav ul li ul.dropdown li {
-    display: block;
-}
-
-nav ul li ul.dropdown li a {
-    padding: 10px;
-    display: block;
-}
 
 nav ul li {
-    position: relative;
-}
-
-nav ul li ul.dropdown {
-    display: none;
-    position: absolute;
-    background: white;
-    transition: all 0.3s ease;
+  position: relative; /* needed for dropdown positioning */
 }
 
 nav a {
@@ -52,11 +28,47 @@ nav a {
   color: white;
   padding: 8px 12px;
   transition: 0.3s;
-}
-nav a:hover {
-  background-color: #14B8A6; 
+  display: block;
   border-radius: 6px;
 }
+
+nav a:hover {
+  background-color: #14B8A6; 
+  color: white;
+}
+
 nav a:active {
   color: #64748B; 
+}
+
+nav ul li ul.dropdown {
+  display: none; /* hidden by default */
+  position: absolute;
+  top: 100%; /* appear below parent */
+  left: 0;
+  background-color: #1E3A8A; /* match header color */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  min-width: 180px; /* optional for nice sizing */
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+nav ul li:hover ul.dropdown {
+  display: block;
+}
+
+nav ul li ul.dropdown li a {
+  padding: 10px 15px;
+  color: #14B8A6;
+  background-color: #1E3A8A;
+  font-size: 18px;
+}
+
+nav ul li ul.dropdown li a:hover {
+  background-color: #14B8A6;
+  color: white;
 }

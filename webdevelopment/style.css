@@ -20,82 +20,87 @@ h2 {
 
 h3 {
     color: #64748B;   
-    font-size: 30px; 
+    font-size: 22px; 
     font-family: Poppins, sans-serif;
+    margin-bottom: 10px;
 }
 
 p {
     color: #64748B;
-    font-size: 18px;
-}
-
-ul {
-    list-style-type: square;
-    margin: 20px;
-    padding: 10px;
-}
-
-li {
-    font-size: 18px;
-    color: #14B8A6;
-}
-
-li:hover {
-    color: white;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 30px;
 }
 
 .about-header {
     grid-column: 1 / -1;
-    text-align: center;
 }
 
-.about-media {
+.headshot {
     grid-column: 1;
 }
 
-.about-content {
+.intro-text {
+    grid-column: 2 / 4;
+}
+
+.education {
+    grid-column: 1;
+}
+
+.resume {
     grid-column: 2;
+    text-align: center;
+}
+
+.quote {
+    grid-column: 3;
+}
+
+.left-text {
+    grid-column: 1;
+}
+
+.video {
+    grid-column: 2;
+}
+
+.right-text {
+    grid-column: 3;
 }
 
 .profile-img {
     width: 100%;
     max-width: 250px;
-    border-radius: 10px;
     display: block;
-    margin: 20px auto;
+    margin: 0 auto;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.profile-img:hover {
-    transform: scale(1.05);
-    transition: 0.3s ease;
 }
 
 .resume-video {
     width: 100%;
-    max-width: 350px;   /* controls size */
+    max-width: 300px;
     display: block;
-    margin: 20px auto;
+    margin: 0 auto;
     border-radius: 10px;
 }
 
 .resume-link {
     display: inline-block;
-    padding: 12px 25px;      
-    margin-top: 20px;        
+    padding: 10px 20px;
     border: 2px solid #14B8A6; 
     background-color: #14B8A6;
     color: white;           
     text-decoration: none;   
     border-radius: 8px;      
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .resume-link:hover {
@@ -104,119 +109,81 @@ li:hover {
 
 footer {
     text-align: center;
+    margin-top: 20px;
 }
 
 footer p { 
     color: #14B8A6;
-    margin: 5px 0;
 }
 
-.contact-container {
-    max-width: 700px;
-    margin: 50px auto;
-    padding: 30px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-header {
+        grid-column: 1 / -1;
+    }
+
+    .headshot {
+        grid-column: 1;
+    }
+
+    .intro-text {
+        grid-column: 2;
+    }
+
+    .education,
+    .resume,
+    .quote {
+        grid-column: span 2;
+    }
+
+    .left-text,
+    .video,
+    .right-text {
+        grid-column: span 2;
+    }
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.form-row {
-    display: flex;
-    gap: 15px;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-label {
-    margin-bottom: 5px;
-    font-weight: 600;
-}
-
-input, select, textarea {
-    padding: 14px 12px;   
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;     
-    width: 100%;
-    box-sizing: border-box;
-}
-
-textarea {
-    min-height: 120px;
-}
-
-button {
-    margin-top: 10px;
-    padding: 12px;
-    background-color: #2c3e50;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #34495e;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .about-grid {
         grid-template-columns: 1fr;
     }
 
-    .about-media,
-    .about-content {
+    .about-grid section {
         grid-column: 1;
     }
 
     .resume-video {
-        max-width: 100%; /* full width on mobile */
+        max-width: 100%;
     }
 }
 
 @media print {
-    @page { margin: 1in; }
-
     body * { visibility: hidden; }
     main, main * { visibility: visible; }
 
-    main { position: absolute; top: 0; left: 0; width: 100%; }
+    main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
 
     header,
     nav,
-    img,
     video,
-    .resume-link,
-    figcaption,
-    h2,
-    h3 {
+    .resume-link {
         display: none;
-        visibility: hidden;
     }
 
-    h1,
-    p,
-    ul,
-    footer {
-        display: block;
-        color: black !important;
-        font-family: "Times New Roman", Georgia, serif !important;
+    body {
+        background: white;
     }
 
-    h1 { font-size: 22pt; text-align: left; }
-    p, ul { font-size: 12pt; }
-    li { color: black !important; }
-    body { background: white !important; }
+    p, h1, h3 {
+        color: black;
+        font-family: "Times New Roman", serif;
+    }
 }

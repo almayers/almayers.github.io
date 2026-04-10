@@ -2,16 +2,10 @@
 <html lang="en">
 
 <head>
-    <!-- Defines character encoding for the document -->
     <meta charset="utf-8">
-
-    <!-- Ensures the page scales correctly on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Title displayed in the browser tab -->
     <title>About Me Page</title>
 
-    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
 </head>
@@ -37,46 +31,57 @@
   </nav>
 </header>
 
-<main>
-    <h1>Amy Mayers</h1>
-    <h2>Mathematics Instructor</h2>
+<main class="about-grid">
 
-    <img src="images/Amy.jpg" alt="Amy Mayers teaching mathematics" class="profile-img">
+    <!-- Title Section -->
+    <section class="about-header">
+        <h1>Amy Mayers</h1>
+        <h2>Mathematics Instructor</h2>
+    </section>
 
-    <p>
-        My name is Amy Mayers and I have been teaching Mathematics for about 16 years. I
-        spent the first 8 years of my career teaching within brick and mortar schools, and later
-        translated to virtual education. With experience in both Middle School and High School
-        math education, I have worked with both remedial courses as well as honors courses. I
-        hold a BS in Mathematical Sciences as well as a Masters Degree in Curriculum and
-        Instruction. My formal education and practical applications have created a level of
-        expertise in both in person and virtual education for secondary math students.
-    </p>
+    <!-- Left Side: Image + Video -->
+    <section class="about-media">
+        <img src="images/Amy.jpg" alt="Amy Mayers teaching mathematics" class="profile-img">
 
-    <h3>Teaching Experience</h3>
+        <figure>
+            <video controls width="100%" class="resume-video">
+                <source src="images/resume.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>
+                Short resume introduction video where I discuss my teaching experience and background in mathematics education.
+            </figcaption>
+        </figure>
+    </section>
 
-    <ul>
-        <li>16 years teaching Mathematics</li>
-        <li>Experience in Middle School and High School</li>
-        <li>Online and in-person instruction</li>
-        <li>Experience with remedial and honors courses</li>
-    </ul>
+    <!-- Right Side: Text Content -->
+    <section class="about-content">
+        <p>
+            My name is Amy Mayers and I have been teaching Mathematics for about 16 years. I
+            spent the first 8 years of my career teaching within brick and mortar schools, and later
+            transitioned to virtual education. With experience in both Middle School and High School
+            math education, I have worked with both remedial courses as well as honors courses. I
+            hold a BS in Mathematical Sciences as well as a Masters Degree in Curriculum and
+            Instruction. My formal education and practical applications have created a level of
+            expertise in both in-person and virtual education for secondary math students.
+        </p>
 
-    <figure>
-        <video controls width="400" class="resume-video">
-            <source src="images/resume.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <figcaption>
-            Short resume introduction video where I discuss my teaching experience and background in mathematics education.
-        </figcaption>
-    </figure>
+        <h3>Teaching Experience</h3>
 
-    <p>
-        <a href="MayersResume.pdf" class="resume-link" target="_blank">
-            Download My Resume
-        </a>
-    </p>
+        <ul>
+            <li>16 years teaching Mathematics</li>
+            <li>Experience in Middle School and High School</li>
+            <li>Online and in-person instruction</li>
+            <li>Experience with remedial and honors courses</li>
+        </ul>
+
+        <p>
+            <a href="MayersResume.pdf" class="resume-link" target="_blank">
+                Download My Resume
+            </a>
+        </p>
+    </section>
+
 </main>
 
 <footer>
@@ -85,16 +90,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-

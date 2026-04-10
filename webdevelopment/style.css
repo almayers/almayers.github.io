@@ -49,7 +49,6 @@ li:hover {
     grid-template-columns: 1fr 2fr;
     gap: 30px;
     padding: 30px;
-    align-items: start;
 }
 
 .about-header {
@@ -63,33 +62,6 @@ li:hover {
 
 .about-content {
     grid-column: 2;
-}
-
-.about-content p {
-    line-height: 1.6;
-}
-
-.hero {
-    text-align: center;
-    color: #14B8A6;
-    position: relative;  
-    padding: 100px 20px;
-}
-
-.hero a {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #14B8A6; 
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.hero a:hover {
-    background-color: #0f766e;
 }
 
 .profile-img {
@@ -107,10 +79,11 @@ li:hover {
 }
 
 .resume-video {
+    width: 100%;
+    max-width: 350px;   /* controls size */
     display: block;
     margin: 20px auto;
     border-radius: 10px;
-    width: 100%;
 }
 
 .resume-link {
@@ -129,37 +102,14 @@ li:hover {
     background-color: #0f766e;
 }
 
-.reflection-box {
-    background-color: #f8fafc;
-    border: 3px solid #64748B;
-    padding: 25px;
-    margin: 40px;
-    border-radius: 10px;
+footer {
+    text-align: center;
 }
 
-.first-paragraph::first-letter {
-    font-size: 200%;
+footer p { 
     color: #14B8A6;
-    font-weight: bold;
+    margin: 5px 0;
 }
-
-.reflection-box p {
-    text-indent: 30px;
-    line-height: 1.6;
-}
-
-.resources li {
-    margin-bottom: 10px;
-}
-
-.resources a {
-    color: #1E3A8A;
-}
-
-.resources a:hover {
-    color: #14B8A6;
-}
-
 
 .contact-container {
     max-width: 700px;
@@ -169,11 +119,6 @@ li:hover {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-size: 16px;
-}
-
-.contact-container h1 {
-    text-align: center;
-    margin-bottom: 25px;
 }
 
 form {
@@ -207,18 +152,8 @@ input, select, textarea {
     box-sizing: border-box;
 }
 
-select {
-    height: 48px;
-}
-
 textarea {
     min-height: 120px;
-}
-
-input:focus, select:focus, textarea:focus {
-    outline: none;
-    border-color: #2c3e50;
-    box-shadow: 0 0 4px rgba(44, 62, 80, 0.3);
 }
 
 button {
@@ -236,19 +171,7 @@ button:hover {
     background-color: #34495e;
 }
 
-footer {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-}
-
-footer p { 
-    color: #14B8A6;
-    margin: 5px 0;
-}
-
 @media (max-width: 768px) {
-
     .about-grid {
         grid-template-columns: 1fr;
     }
@@ -258,8 +181,8 @@ footer p {
         grid-column: 1;
     }
 
-    .form-row {
-        flex-direction: column;
+    .resume-video {
+        max-width: 100%; /* full width on mobile */
     }
 }
 
@@ -283,12 +206,17 @@ footer p {
         visibility: hidden;
     }
 
-    .resume-video { display: none !important; }
-
     h1,
     p,
     ul,
     footer {
         display: block;
         color: black !important;
-        font-family: "Times
+        font-family: "Times New Roman", Georgia, serif !important;
+    }
+
+    h1 { font-size: 22pt; text-align: left; }
+    p, ul { font-size: 12pt; }
+    li { color: black !important; }
+    body { background: white !important; }
+}

@@ -2,13 +2,13 @@
 <html lang="en">
 <!--
   Name: Amy Mayers
-  Date: February 4, 2026
+  Date: April 16, 2026
   Course: Web Design Development
   Description: Reusable HTML5 starter template for future projects
 -->
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>Home Page</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/math.ico">
     <link rel="stylesheet" href="style.css">
@@ -19,6 +19,8 @@
 
 <header>
     <img src="images/MayersLogo.png" alt="Mayers Math Logo">
+
+    <span class="hamburger">&#9776;</span>
 
     <nav>
         <ul>
@@ -79,6 +81,18 @@
 
     </div>
 </footer>
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('nav ul');
+
+  hamburger.addEventListener('click', () => {
+    if (navMenu.style.display === 'flex') {
+      navMenu.style.display = 'none';
+    } else {
+      navMenu.style.display = 'flex';
+    }
+  });
+</script>
 
 </body>
 </html>

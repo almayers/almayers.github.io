@@ -4,10 +4,17 @@ header {
   justify-content: space-between;
   background-color: #1E3A8A; 
   padding: 12px 20px;
+  position: relative;
 }
 
 header img {
   height: 150px;
+}
+.hamburger {
+  display: none; 
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
 }
 nav ul {
   list-style: none;
@@ -18,7 +25,7 @@ nav ul {
 }
 
 nav ul li {
-  position: relative; /* needed for dropdown positioning */
+  position: relative;
 }
 
 nav a {
@@ -40,17 +47,16 @@ nav a:hover {
 nav a:active {
   color: #64748B; 
 }
-
 nav ul li ul.dropdown {
-  display: none; /* hidden by default */
+  display: none; 
   position: absolute;
-  top: 100%; /* appear below parent */
+  top: 100%; 
   left: 0;
-  background-color: #1E3A8A; /* match header color */
+  background-color: #1E3A8A; 
   padding: 0;
   margin: 0;
   list-style: none;
-  min-width: 180px; /* optional for nice sizing */
+  min-width: 180px; 
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   z-index: 100;
@@ -71,4 +77,40 @@ nav ul li ul.dropdown li a {
 nav ul li ul.dropdown li a:hover {
   background-color: #14B8A6;
   color: white;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    background-color: #1E3A8A;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    padding: 12px 20px;
+  }
+  nav ul li ul.dropdown {
+    position: static; 
+    box-shadow: none;
+  }
+
+  nav ul li:hover ul.dropdown {
+    display: none; 
+  }
+  nav ul li ul.dropdown li a {
+    padding-left: 30px;
+    font-size: 18px;
+    color: #14B8A6;
+  }
 }

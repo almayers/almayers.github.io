@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  Name: Amy Mayers
+  Date: April 16, 2026
+  Course: Web Design Development
+  Description: Reusable HTML5 starter template for future projects
+-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Home Page</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/math.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+
+<header>
+    <img src="images/MayersLogo.png" alt="Mayers Math Logo">
+
+    <span class="hamburger">&#9776;</span>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <a href="mathcontent.html">Math Content</a>
+                <ul class="dropdown">
+                    <li><a href="exponents.html">Exponents</a></li>
+                    <li><a href="linearequations.html">Linear Equations</a></li>
+                    <li><a href="expressions.html">Algebraic Expressions</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">Reflection and Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h1>Welcome to Math!</h1>
+
+        <h3>Hello and welcome to Mrs. Mayers’ Algebra resource website!</h3>
+
+        <p>
+            I am so excited you are here and I hope these lessons help to refresh your basic Algebra skills which are helpful
+            to your course progress. Basic Algebraic concepts are crucial in the high level development of mathematical
+            ideas and reasoning. Here, you’ll have access to a variety of important topics that will help hone in on building
+            these essential skills. The lessons provided will enable learning and practicing with exponents, solving for
+            basic linear equations and both understanding and applying algebraic expressions.
+        </p>
+
+        <blockquote>
+            Whether math is a subject you enjoy or perhaps not so much, just remember that every person <i>truly is</i> a math person!
+        </blockquote>
+
+        <a href="#">Dive into the Math!</a>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+
+        <p>
+            <img src="images/phone.png" alt="Phone icon" class="icon">
+            (123) 456-7891
+        </p>
+
+        <p>
+            <img src="images/email.png" alt="Email icon" class="icon">
+            amy@example.com
+        </p>
+
+        <p>Amy Mayers — April 16, 2026</p>
+
+    </div>
+</footer>
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('nav ul');
+
+  hamburger.addEventListener('click', () => {
+    if (navMenu.style.display === 'flex') {
+      navMenu.style.display = 'none';
+    } else {
+      navMenu.style.display = 'flex';
+    }
+  });
+</script>
+
+</body>
+</html>

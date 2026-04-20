@@ -46,8 +46,8 @@ main {
 }
 
 .content-section img {
-    width: 100%;
-    max-width: 100%;
+    width: 80%;  /* Limit image width to 80% of the parent container */
+    max-width: 600px; /* Maximum width to ensure it doesn't stretch too much */
     display: block;
     margin: 0 auto;
     border-radius: 10px;

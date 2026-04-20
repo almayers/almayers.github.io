@@ -116,50 +116,74 @@ footer p {
     color: #14B8A6;
 }
 
-@media (max-width: 900px) {
-    .about-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .about-header {
-        grid-column: 1 / -1;
-    }
-
-    .headshot {
-        grid-column: 1;
-    }
-
-    .intro-text {
-        grid-column: 2;
-    }
-
-    .education,
-    .resume,
-    .quote {
-        grid-column: span 2;
-    }
-
-    .left-text,
-    .video,
-    .right-text {
-        grid-column: span 2;
-    }
+/* Main Content Layout */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Default to two columns for large screens */
+    gap: 30px;
+    padding: 20px;
 }
 
-@media (max-width: 600px) {
-    .about-grid {
+/* Grid layout for individual content sections */
+.content-section {
+    display: grid;
+    gap: 20px;
+}
+
+.content-section img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.content-section h2,
+.content-section h3 {
+    text-align: center;
+}
+
+.content-section p {
+    text-align: justify;
+}
+
+/* Responsive Design: Media Queries */
+@media (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr; /* Stack all content vertically on smaller screens */
+    }
+
+    .content-section {
         grid-template-columns: 1fr;
     }
-
-    .about-grid section {
-        grid-column: 1;
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Slightly smaller font size */
     }
 
-    .resume-video {
-        max-width: 100%;
+    h1 {
+        font-size: 36px; /* Reduce heading size */
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px; /* Best for smaller text for better readability on mobile */
+    }
+
+    .content-section img {
+        max-width: 90%; /* This will make images fit better on smaller screens */
     }
 }
-
+/* Print Layout */
 @media print {
     body * { visibility: hidden; }
     main, main * { visibility: visible; }

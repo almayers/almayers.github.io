@@ -46,8 +46,8 @@ main {
 }
 
 .content-section img {
-    width: 80%;  /* Limit image width to 80% of the parent container */
-    max-width: 600px; /* Maximum width to ensure it doesn't stretch too much */
+    width: 80%; 
+    max-width: 600px; 
     display: block;
     margin: 0 auto;
     border-radius: 10px;
@@ -63,7 +63,6 @@ main {
     text-align: justify;
 }
 
-/* Links styling for readability */
 a {
     color: #14B8A6;  /* Light teal for links */
     text-decoration: none; /* Remove underline from links */
@@ -74,11 +73,11 @@ a:hover {
 }
 
 a:visited {
-    color: #10B981;  /* Slightly different green for visited links */
+    color: #10B981;  /* Slightly different green for visited links - may update later */
 }
 
 a:active {
-    color: #0f766e;  /* Darker shade when clicked */
+    color: #0f766e;  /* Darker shade when clicked - may update later */
 }
 
 /* Footer styling */
@@ -91,9 +90,6 @@ footer p {
     color: #14B8A6;
 }
 
-/* Media Queries for responsive design */
-
-/* For screens smaller than 900px, adjust to a single column */
 @media (max-width: 900px) {
     main {
         grid-template-columns: 1fr; /* Stack all content vertically on smaller screens */
@@ -104,7 +100,7 @@ footer p {
     }
 }
 
-/* For screens smaller than 600px, further reduce font sizes and adjust image sizes */
+/* For screens smaller than 600px, makes sure to reduce font sizes and adjust image sizes */
 @media (max-width: 600px) {
     body {
         font-size: 14px; /* Slightly smaller font size */

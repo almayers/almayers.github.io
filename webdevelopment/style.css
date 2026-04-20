@@ -148,6 +148,24 @@ main {
     text-align: justify;
 }
 
+/* Links styling for readability */
+a {
+    color: #14B8A6;  /* Light teal for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    color: #0f766e;  /* Darker teal for hover- may change later */
+}
+
+a:visited {
+    color: #10B981;  /* Slightly different green for visited links */
+}
+
+a:active {
+    color: #0f766e;  /* Darker shade when clicked */
+}
+
 /* Responsive Design: Media Queries */
 @media (max-width: 900px) {
     main {
@@ -158,6 +176,8 @@ main {
         grid-template-columns: 1fr;
     }
 }
+
+/* For screens smaller than 600px, further reduce font sizes and adjust image sizes */
 @media (max-width: 600px) {
     body {
         font-size: 14px; /* Slightly smaller font size */
@@ -176,13 +196,14 @@ main {
     }
 
     p {
-        font-size: 14px; /* Best for smaller text for better readability on mobile */
+        font-size: 14px; /* Smaller text for better readability on mobile */
     }
 
     .content-section img {
-        max-width: 90%; /* This will make images fit better on smaller screens */
+        max-width: 90%; /* Make images fit better on smaller screens */
     }
 }
+
 /* Print Layout */
 @media print {
     body * { visibility: hidden; }

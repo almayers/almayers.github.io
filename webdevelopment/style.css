@@ -31,100 +31,15 @@ p {
     line-height: 1.6;
 }
 
-.about-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 30px;
-}
-
-.about-header {
-    grid-column: 1 / -1;
-}
-
-.headshot {
-    grid-column: 1;
-}
-
-.intro-text {
-    grid-column: 2 / 4;
-}
-
-.education {
-    grid-column: 1;
-}
-
-.resume {
-    grid-column: 2;
-    text-align: center;
-}
-
-.quote {
-    grid-column: 3;
-}
-
-.left-text {
-    grid-column: 1;
-}
-
-.video {
-    grid-column: 2;
-}
-
-.right-text {
-    grid-column: 3;
-}
-
-.profile-img {
-    width: 100%;
-    max-width: 250px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.resume-video {
-    width: 100%;
-    max-width: 300px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-}
-
-.resume-link {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid #14B8A6; 
-    background-color: #14B8A6;
-    color: white;           
-    text-decoration: none;   
-    border-radius: 8px;      
-    font-size: 16px;
-}
-
-.resume-link:hover {
-    background-color: #0f766e;
-}
-
-footer {
-    text-align: center;
-    margin-top: 20px;
-}
-
-footer p { 
-    color: #14B8A6;
-}
-
 /* Main Content Layout */
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Default to two columns for large screens */
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
     padding: 20px;
 }
 
-/* Grid layout for individual content sections */
+/* Content Section */
 .content-section {
     display: grid;
     gap: 20px;
@@ -155,7 +70,7 @@ a {
 }
 
 a:hover {
-    color: #0f766e;  /* Darker teal for hover- may change later */
+    color: #0f766e;  /* Darker teal for hover */
 }
 
 a:visited {
@@ -166,7 +81,19 @@ a:active {
     color: #0f766e;  /* Darker shade when clicked */
 }
 
-/* Responsive Design: Media Queries */
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p { 
+    color: #14B8A6;
+}
+
+/* Media Queries for responsive design */
+
+/* For screens smaller than 900px, adjust to a single column */
 @media (max-width: 900px) {
     main {
         grid-template-columns: 1fr; /* Stack all content vertically on smaller screens */

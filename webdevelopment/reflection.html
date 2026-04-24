@@ -1,54 +1,40 @@
 <!DOCTYPE html>
-<!--
-  Name: Amy Mayers
-  Date: February 4, 2026
-  Course: Web Design Development
-  Description: Reusable HTML5 starter template for future projects
--->
+<html lang="en">
+
 <head>
-    <!-- Defines character encoding for the document -->
     <meta charset="utf-8">
-
-    <!-- Ensures the page scales correctly on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Title displayed in the browser tab -->
     <title>Resources</title>
 
-    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
 </head>
 
 <body>
-   <!-- Header section for logo and navigation -->
+
 <header>
+    <img src="images/MayersLogo.png" alt="Mayers Math Logo">
 
-<img src="images/MayersLogo.png" alt="Mayers Math Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
 
-<nav>
- <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="mathcontent.html">Math Content</a>
-     <ul class="dropdown">
-          <li><a href="exponents.html">Exponents</a></li>
-          <li><a href="linearequations.html">Linear Equations</a></li>
-          <li><a href="expressions.html">Algebraic Expressions</a></li>
+            <li><a href="mathcontent.html">Math Content</a>
+                <ul class="dropdown">
+                    <li><a href="exponents.html">Exponents</a></li>
+                    <li><a href="linearequations.html">Linear Equations</a></li>
+                    <li><a href="expressions.html">Algebraic Expressions</a></li>
+                </ul>
+            </li>
+
+            <li><a href="reflection.html">Reflection and Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
-  
-    </li>
-    <li><a href="reflection.html">Reflection and Resources</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-
+    </nav>
 </header>
- 
 
-    <!-- Main content area -->
-    <main>
-
+<main>
 <section class="reflection-box">
 
 <h1>Reflection and Learning Resources</h1>
@@ -56,63 +42,81 @@
 <h2>Reflection</h2>
 
 <p class="first-paragraph">
-Creating this Algebra resource website has been a valuable experience in both web design and mathematics education. Throughout the process, I learned how to organize content in a clear and accessible way so that students can easily review important Algebra concepts. Designing the site required thinking about how information should be structured so learners can navigate topics such as exponents, linear equations, and algebraic expressions.
+Creating this Algebra resource website has been a valuable experience in both web design and mathematics education...
 </p>
 
 <p>
-One of the most important lessons I learned while creating this project was how web design can support learning. By breaking mathematical concepts into smaller lessons and including examples, videos, and explanations, students are able to revisit topics they may find challenging. The layout and structure of the website help guide students through each concept step by step.
+One of the most important lessons I learned while creating this project was how web design can support learning...
 </p>
 
 <p>
-This project also helped me improve my HTML and CSS skills. I practiced using semantic elements like header, navigation, main, and footer sections to organize the webpage. I also learned how to apply styling techniques such as pseudo-elements and box models to make the content visually appealing and easier to read.
+This project also helped me improve my HTML and CSS skills...
 </p>
 
 <p>
-Overall, this website demonstrates how technology can enhance education. By combining instructional videos, written explanations, and organized resources, students have access to additional support when reviewing Algebra concepts outside of the classroom.
+Overall, this website demonstrates how technology can enhance education...
 </p>
 
 <h2>Math Learning Resources</h2>
 
 <ul class="resources">
-
-<li>
-<a href="https://www.youtube.com/watch?v=b4mSqcJND3I" target="_blank">
-Mario’s Math Tutoring. (n.d.). Exponent Rules with Examples [Video]. YouTube.
-</a>
-</li>
-
-<li>
-<a href="https://www.youtube.com/watch?v=d6L-ptO-5X0" target="_blank">
-An Intro to Solving Linear Equations: Solving some Basic Fundamental Types of Linear Equations [Video]. YouTube.
-</a>
-</li>
-
-<li>
-<a href="https://www.youtube.com/watch?v=4FMDqirfXIs" target="_blank">
-Math with Mr. J. (2023). Writing Algebraic Expressions with One Operation [Video]. YouTube.
-</a>
-</li>
-
-<li>
-<a href="https://www.khanacademy.org/math/algebra" target="_blank">
-Khan Academy. (n.d.). Algebra Fundamentals. https://www.khanacademy.org/math/algebra
-</a>
-</li>
-
-<li>
-<a href="https://www.mathsisfun.com/algebra/index.html" target="_blank">
-Math Is Fun. (n.d.). Algebra Basics. https://www.mathsisfun.com/algebra/index.html
-</a>
-</li>
-
+    <li><a href="https://www.youtube.com/watch?v=b4mSqcJND3I" target="_blank">Exponent Rules Video</a></li>
+    <li><a href="https://www.youtube.com/watch?v=d6L-ptO-5X0" target="_blank">Linear Equations Video</a></li>
+    <li><a href="https://www.youtube.com/watch?v=4FMDqirfXIs" target="_blank">Algebraic Expressions Video</a></li>
+    <li><a href="https://www.khanacademy.org/math/algebra" target="_blank">Khan Academy</a></li>
+    <li><a href="https://www.mathsisfun.com/algebra/index.html" target="_blank">Math is Fun</a></li>
 </ul>
 
+<!-- TABLE ADDED -->
+<figure>
+    <figcaption>Algebra Topics and Learning Resources</figcaption>
+
+    <table class="resource-table">
+        <thead>
+            <tr>
+                <th scope="col">Topic</th>
+                <th scope="col">Description</th>
+                <th scope="col">Resource Type</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Exponents</th>
+                <td>Learn the rules for simplifying powers and expressions.</td>
+                <td>Video</td>
+            </tr>
+            <tr>
+                <th scope="row">Linear Equations</th>
+                <td>Solve equations using inverse operations.</td>
+                <td>Video</td>
+            </tr>
+            <tr>
+                <th scope="row">Algebraic Expressions</th>
+                <td>Write and simplify expressions using variables.</td>
+                <td>Video</td>
+            </tr>
+            <tr>
+                <th scope="row">General Algebra</th>
+                <td>Practice problems and full lessons.</td>
+                <td>Website</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Resources support independent student learning.</td>
+            </tr>
+        </tfoot>
+    </table>
+</figure>
+
 </section>
-     
-    </main>
+</main>
+
 <footer>
-        <!-- Footer content such as name and date -->
-        <p>Amy Mayers — March 10, 2026</p>
+    <p>Amy Mayers — March 10, 2026</p>
 </footer>
+
 </body>
 </html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exponents</title>
+
+    <link rel="shortcut icon" href="images/math.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+
+<header>
+    <img src="images/MayersLogo.png" alt="Mayers Math Logo">
+
+    <span class="hamburger">&#9776;</span>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+
+            <li>
+                <a href="mathcontent.html">Math Content</a>
+                <ul class="dropdown">
+                    <li><a href="exponents.html">Exponents</a></li>
+                    <li><a href="linearequations.html">Linear Equations</a></li>
+                    <li><a href="expressions.html">Algebraic Expressions</a></li>
+                </ul>
+            </li>
+
+            <li><a href="reflection.html">Reflection and Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section class="content-section">
+
+    <h1>Exponents</h1>
+
+    <p>
+        Students will apply exponent rules to simplify expressions and understand repeated multiplication.
+    </p>
+
+    <h3>Rules of Exponents</h3>
+
+    <ul>
+        <li>Product Rule: x² · x³ = x⁵</li>
+        <li>Quotient Rule: x⁶ ÷ x² = x⁴</li>
+        <li>Power Rule: (x²)³ = x⁶</li>
+        <li>Zero Rule: x⁰ = 1</li>
+    </ul>
+
+    <figure>
+        <img src="images/ExponentRules.png" alt="Exponent Rules">
+        <figcaption>Example of exponent rules</figcaption>
+    </figure>
+
+    <a href="https://www.youtube.com/watch?v=b4mSqcJND3I" target="_blank">
+        Watch Exponents Video
+    </a>
+
+</section>
+
+</main>
+
+<footer>
+    <p>Amy Mayers — April 19, 2026</p>
+</footer>
+
+<script>
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>

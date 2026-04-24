@@ -11,9 +11,9 @@ header img {
   height: 150px;
 }
 
-/* HAMBURGER BUTTON */
+/* HAMBURGER */
 .hamburger {
-  display: none; 
+  display: none;
   font-size: 30px;
   cursor: pointer;
   color: white;
@@ -21,13 +21,21 @@ header img {
   border: none;
 }
 
-/* NAV LIST */
+/* NAV */
+nav {
+  z-index: 1000;
+}
+
 nav ul {
   list-style: none;
   display: flex;
   gap: 25px;
   margin: 0;
   padding: 0;
+}
+
+nav ul.active {
+  display: flex;
 }
 
 nav ul li {
@@ -47,7 +55,6 @@ nav a {
 
 nav a:hover {
   background-color: #14B8A6; 
-  color: white;
 }
 
 nav a:active {
@@ -56,19 +63,13 @@ nav a:active {
 
 /* DROPDOWN */
 nav ul li ul.dropdown {
-  display: none; 
+  display: none;
   position: absolute;
-  top: 100%; 
+  top: 100%;
   left: 0;
-  background-color: #1E3A8A; 
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  min-width: 180px; 
+  background-color: #1E3A8A;
+  min-width: 180px;
   border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  z-index: 100;
-  transition: all 0.3s ease;
 }
 
 nav ul li:hover ul.dropdown {
@@ -76,19 +77,13 @@ nav ul li:hover ul.dropdown {
 }
 
 nav ul li ul.dropdown li a {
-  padding: 10px 15px;
-  color: #14B8A6;
-  background-color: #1E3A8A;
+  padding: 10px;
   font-size: 18px;
-}
-
-nav ul li ul.dropdown li a:hover {
-  background-color: #14B8A6;
-  color: white;
+  color: #14B8A6;
 }
 
 /* MOBILE */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
   .hamburger {
     display: block;
@@ -97,22 +92,16 @@ nav ul li ul.dropdown li a:hover {
     right: 20px;
   }
 
-  nav {
-    width: 100%;
-  }
-
   nav ul {
     display: none;
     flex-direction: column;
     width: 100%;
-    gap: 0;
     background-color: #1E3A8A;
     position: absolute;
     top: 100%;
     left: 0;
   }
 
-  /* SHOW MENU WHEN ACTIVE */
   nav ul.active {
     display: flex;
   }
@@ -122,22 +111,14 @@ nav ul li ul.dropdown li a:hover {
   }
 
   nav ul li a {
-    padding: 12px 20px;
+    padding: 12px;
   }
 
-  /* DROPDOWN FIX FOR MOBILE */
   nav ul li ul.dropdown {
-    position: static; 
-    box-shadow: none;
+    position: static;
   }
 
   nav ul li:hover ul.dropdown {
-    display: none; 
-  }
-
-  nav ul li ul.dropdown li a {
-    padding-left: 30px;
-    font-size: 18px;
-    color: #14B8A6;
+    display: none;
   }
 }

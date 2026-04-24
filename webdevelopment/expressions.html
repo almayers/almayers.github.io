@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Algebraic Expressions</title>
+
+    <link rel="shortcut icon" href="images/math.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+
+<header>
+    <img src="images/MayersLogo.png" alt="Mayers Math Logo">
+
+    <span class="hamburger">&#9776;</span>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+
+            <li>
+                <a href="mathcontent.html">Math Content</a>
+                <ul class="dropdown">
+                    <li><a href="exponents.html">Exponents</a></li>
+                    <li><a href="linearequations.html">Linear Equations</a></li>
+                    <li><a href="expressions.html">Algebraic Expressions</a></li>
+                </ul>
+            </li>
+
+            <li><a href="reflection.html">Reflection and Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section class="content-section">
+
+    <h1>Algebraic Expressions</h1>
+
+    <p>
+        Students will simplify algebraic expressions by combining like terms and applying order of operations.
+    </p>
+
+    <h3>What is an Expression?</h3>
+    <p>
+        An algebraic expression is a combination of variables, constants, and operations without an equal sign.
+    </p>
+
+    <figure>
+        <img src="images/Operations.png" alt="Algebraic Expression Example">
+        <figcaption>Example: 2x + 3</figcaption>
+    </figure>
+
+    <h3>Key Parts</h3>
+    <ul>
+        <li>Variable: x, y</li>
+        <li>Coefficient: number in front of variable</li>
+        <li>Constant: number without variable</li>
+        <li>Term: each separated part of expression</li>
+    </ul>
+
+    <a href="https://www.youtube.com/watch?v=4FMDqirfXIs" target="_blank">
+        Watch Algebraic Expressions Video
+    </a>
+
+</section>
+
+</main>
+
+<footer>
+    <p>Amy Mayers — April 19, 2026</p>
+</footer>
+
+<script>
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>

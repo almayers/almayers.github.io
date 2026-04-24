@@ -15,13 +15,11 @@
 <header>
     <img src="images/MayersLogo.png" alt="Mayers Math Logo">
 
-    <!-- Hamburger Button -->
-    <button class="menu-toggle" aria-label="Toggle navigation">
-        ☰
-    </button>
+    <!-- Hamburger -->
+    <button class="hamburger" aria-label="Toggle navigation">☰</button>
 
     <nav>
-        <ul class="nav-links">
+        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
 
@@ -47,19 +45,19 @@
 <h2>Reflection</h2>
 
 <p class="first-paragraph">
-Creating this Algebra resource website has been a valuable experience in both web design and mathematics education. Throughout the process, I learned how to organize content in a clear and accessible way so that students can easily review important Algebra concepts.
+Creating this Algebra resource website has been a valuable experience in both web design and mathematics education.
 </p>
 
 <p>
-One of the most important lessons I learned while creating this project was how web design can support learning. By breaking mathematical concepts into smaller lessons and including examples, videos, and explanations, students are able to revisit topics they may find challenging.
+One of the most important lessons I learned was how web design can support learning.
 </p>
 
 <p>
-This project also helped me improve my HTML and CSS skills. I practiced using semantic elements like header, navigation, main, and footer sections to organize the webpage.
+This project also helped me improve my HTML and CSS skills.
 </p>
 
 <p>
-Overall, this website demonstrates how technology can enhance education. Students have access to additional support when reviewing Algebra concepts outside of the classroom.
+Overall, this website demonstrates how technology can enhance education.
 </p>
 
 <h2>Math Learning Resources</h2>
@@ -88,29 +86,29 @@ Overall, this website demonstrates how technology can enhance education. Student
         <tbody>
             <tr>
                 <th scope="row">Exponents</th>
-                <td>Learn the rules for simplifying powers and expressions.</td>
+                <td>Learn exponent rules.</td>
                 <td>Video</td>
             </tr>
             <tr>
                 <th scope="row">Linear Equations</th>
-                <td>Solve equations using inverse operations.</td>
+                <td>Solve equations step-by-step.</td>
                 <td>Video</td>
             </tr>
             <tr>
                 <th scope="row">Algebraic Expressions</th>
-                <td>Write and simplify expressions using variables.</td>
+                <td>Write and simplify expressions.</td>
                 <td>Video</td>
             </tr>
             <tr>
                 <th scope="row">General Algebra</th>
-                <td>Practice problems and full lessons.</td>
+                <td>Practice and full lessons.</td>
                 <td>Website</td>
             </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <td colspan="3">Resources support independent student learning.</td>
+                <td colspan="3">Resources support independent learning.</td>
             </tr>
         </tfoot>
     </table>
@@ -123,10 +121,10 @@ Overall, this website demonstrates how technology can enhance education. Student
     <p>Amy Mayers — March 10, 2026</p>
 </footer>
 
-<!-- JavaScript for Hamburger Menu -->
+<!-- JS (MUST BE HERE) -->
 <script>
-const toggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+const toggle = document.querySelector('.hamburger');
+const navLinks = document.querySelector('nav ul');
 
 toggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');

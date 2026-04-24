@@ -15,8 +15,13 @@
 <header>
     <img src="images/MayersLogo.png" alt="Mayers Math Logo">
 
+    <!-- Hamburger Button -->
+    <button class="menu-toggle" aria-label="Toggle navigation">
+        ☰
+    </button>
+
     <nav>
-        <ul>
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
 
@@ -42,19 +47,19 @@
 <h2>Reflection</h2>
 
 <p class="first-paragraph">
-Creating this Algebra resource website has been a valuable experience in both web design and mathematics education...
+Creating this Algebra resource website has been a valuable experience in both web design and mathematics education. Throughout the process, I learned how to organize content in a clear and accessible way so that students can easily review important Algebra concepts.
 </p>
 
 <p>
-One of the most important lessons I learned while creating this project was how web design can support learning...
+One of the most important lessons I learned while creating this project was how web design can support learning. By breaking mathematical concepts into smaller lessons and including examples, videos, and explanations, students are able to revisit topics they may find challenging.
 </p>
 
 <p>
-This project also helped me improve my HTML and CSS skills...
+This project also helped me improve my HTML and CSS skills. I practiced using semantic elements like header, navigation, main, and footer sections to organize the webpage.
 </p>
 
 <p>
-Overall, this website demonstrates how technology can enhance education...
+Overall, this website demonstrates how technology can enhance education. Students have access to additional support when reviewing Algebra concepts outside of the classroom.
 </p>
 
 <h2>Math Learning Resources</h2>
@@ -67,7 +72,7 @@ Overall, this website demonstrates how technology can enhance education...
     <li><a href="https://www.mathsisfun.com/algebra/index.html" target="_blank">Math is Fun</a></li>
 </ul>
 
-<!-- TABLE ADDED -->
+<!-- TABLE -->
 <figure>
     <figcaption>Algebra Topics and Learning Resources</figcaption>
 
@@ -117,6 +122,16 @@ Overall, this website demonstrates how technology can enhance education...
 <footer>
     <p>Amy Mayers — March 10, 2026</p>
 </footer>
+
+<!-- JavaScript for Hamburger Menu -->
+<script>
+const toggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+</script>
 
 </body>
 </html>

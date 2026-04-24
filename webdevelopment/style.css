@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     color: #64748B;
@@ -6,7 +10,8 @@ body {
     margin: 0;
 }
 
-/* Headings */
+/* ================= HEADINGS ================= */
+
 h1 {
     color: #64748B;
     font-size: 48px;
@@ -21,11 +26,13 @@ h2 {
 h3 {
     color: #64748B;
     font-size: 22px;
+    text-align: center;
 }
 
-/* Paragraphs */
+/* ================= TEXT ================= */
+
 p {
-    color: #64748B;
+    color: #E2E8F0;
     line-height: 1.6;
 }
 
@@ -37,7 +44,13 @@ main {
     padding: 20px;
 }
 
-/* ================= ABOUT PAGE FIX ================= */
+/* ================= GENERAL SECTION SPACING ================= */
+
+section {
+    margin-bottom: 20px;
+}
+
+/* ================= ABOUT PAGE GRID ================= */
 
 .about-grid {
     display: grid;
@@ -53,7 +66,7 @@ main {
     border-radius: 10px;
 }
 
-/* Image fix */
+/* Profile image */
 .profile-img {
     width: 100%;
     max-width: 300px;
@@ -62,7 +75,7 @@ main {
     border-radius: 10px;
 }
 
-/* VIDEO FIX (this was your main issue) */
+/* Video fix */
 .resume-video {
     width: 100%;
     max-width: 500px;
@@ -132,5 +145,12 @@ footer {
 
     h1 {
         font-size: 36px;
+    }
+
+    /* Table fix for mobile */
+    .resource-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 }

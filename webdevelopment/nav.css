@@ -2,7 +2,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1E3A8A; 
+  background-color: #1E3A8A;
   padding: 12px 20px;
   position: relative;
 }
@@ -11,6 +11,7 @@ header img {
   height: 150px;
 }
 
+/* Hamburger */
 .hamburger {
   display: none;
   font-size: 30px;
@@ -20,6 +21,7 @@ header img {
   border: none;
 }
 
+/* NAV BASE */
 nav {
   z-index: 1000;
 }
@@ -32,37 +34,55 @@ nav ul {
   padding: 0;
 }
 
-nav ul.active {
-  display: flex;
-}
-
 nav ul li {
   position: relative;
 }
 
+/* LINKS */
 nav a {
   text-decoration: none;
   font-size: 22px;
   color: white;
   padding: 8px 12px;
   display: block;
+  border-radius: 6px;
 }
 
 nav a:hover {
   background-color: #14B8A6;
 }
 
+/* ================= DROPDOWN (FIXED) ================= */
+
 nav ul li ul.dropdown {
   display: none;
   position: absolute;
+  top: 100%;
+  left: 0;
   background-color: #1E3A8A;
+  min-width: 200px;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li:hover ul.dropdown {
-  display: block;
+  display: flex;
 }
 
+nav ul li ul.dropdown li {
+  width: 100%;
+}
+
+nav ul li ul.dropdown li a {
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+/* ================= MOBILE ================= */
+
 @media (max-width: 768px) {
+
   .hamburger {
     display: block;
     position: absolute;
@@ -78,9 +98,39 @@ nav ul li:hover ul.dropdown {
     position: absolute;
     top: 100%;
     left: 0;
+    gap: 0;
   }
 
   nav ul.active {
     display: flex;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav a {
+    width: 100%;
+  }
+
+  /* Dropdown becomes inline on mobile (IMPORTANT FIX) */
+  nav ul li ul.dropdown {
+    position: static;
+    display: none;
+    background-color: #142a66;
+  }
+
+  nav ul li:hover ul.dropdown {
+    display: none; /* disables hover on mobile */
+  }
+
+  nav ul li:focus-within ul.dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li ul.dropdown li a {
+    padding-left: 30px;
+    font-size: 16px;
   }
 }

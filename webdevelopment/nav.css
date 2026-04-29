@@ -1,7 +1,7 @@
 header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column; 
+  align-items: center;     
   background-color: #1E3A8A;
   padding: 12px 20px;
   position: relative;
@@ -9,9 +9,9 @@ header {
 
 header img {
   height: 150px;
+  margin-bottom: 10px;
 }
 
-/* Hamburger */
 .hamburger {
   display: none;
   font-size: 30px;
@@ -21,14 +21,16 @@ header img {
   border: none;
 }
 
-/* NAV BASE */
 nav {
   z-index: 1000;
+  width: 100%;
 }
 
 nav ul {
   list-style: none;
   display: flex;
+  justify-content: center; 
+  align-items: center;
   gap: 25px;
   margin: 0;
   padding: 0;
@@ -38,7 +40,7 @@ nav ul li {
   position: relative;
 }
 
-/* LINKS */
+
 nav a {
   text-decoration: none;
   font-size: 22px;
@@ -52,13 +54,12 @@ nav a:hover {
   background-color: #14B8A6;
 }
 
-/* ================= DROPDOWN (FIXED) ================= */
-
 nav ul li ul.dropdown {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 50%;                 
+  transform: translateX(-50%);
   background-color: #1E3A8A;
   min-width: 200px;
   flex-direction: column;
@@ -77,9 +78,9 @@ nav ul li ul.dropdown li {
 nav ul li ul.dropdown li a {
   font-size: 18px;
   padding: 10px 15px;
+  text-align: center; 
 }
 
-/* ================= MOBILE ================= */
 
 @media (max-width: 768px) {
 
@@ -99,6 +100,7 @@ nav ul li ul.dropdown li a {
     top: 100%;
     left: 0;
     gap: 0;
+    text-align: center;
   }
 
   nav ul.active {
@@ -113,15 +115,16 @@ nav ul li ul.dropdown li a {
     width: 100%;
   }
 
-  /* Dropdown becomes inline on mobile (IMPORTANT FIX) */
+
   nav ul li ul.dropdown {
     position: static;
     display: none;
     background-color: #142a66;
+    transform: none;
   }
 
   nav ul li:hover ul.dropdown {
-    display: none; /* disables hover on mobile */
+    display: none;
   }
 
   nav ul li:focus-within ul.dropdown {
@@ -130,7 +133,7 @@ nav ul li ul.dropdown li a {
   }
 
   nav ul li ul.dropdown li a {
-    padding-left: 30px;
+    padding-left: 0;      
     font-size: 16px;
   }
 }

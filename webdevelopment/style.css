@@ -98,6 +98,11 @@ a:hover {
 
 /* ================= TABLE ================= */
 
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
 .resource-table {
     width: 100%;
     border-collapse: collapse;
@@ -147,10 +152,10 @@ footer {
         font-size: 36px;
     }
 
-    /* Table fix for mobile */
-    .resource-table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
+    /* Better mobile table spacing */
+    .resource-table th,
+    .resource-table td {
+        padding: 8px;
+        font-size: 14px;
     }
 }

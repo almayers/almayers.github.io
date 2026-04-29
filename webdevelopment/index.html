@@ -8,11 +8,10 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -20,10 +19,13 @@
 <header>
     <img src="images/MayersLogo.png" alt="Mayers Math Logo">
 
+    <button class="hamburger" aria-label="Toggle navigation">☰</button>
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
+
             <li><a href="mathcontent.html">Math Content</a>
                 <ul class="dropdown">
                     <li><a href="exponents.html">Exponents</a></li>
@@ -31,6 +33,7 @@
                     <li><a href="expressions.html">Algebraic Expressions</a></li>
                 </ul>
             </li>
+
             <li><a href="reflection.html">Reflection and Resources</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -44,11 +47,11 @@
     <h3>Hello and welcome to Mrs. Mayers’ Algebra resource website!</h3>
 
     <p>
-        I am so excited you are here and I hope these lessons help to refresh your basic Algebra skills.
+        I am so excited you are here and I hope these lessons help you improve your Algebra skills.
     </p>
 
     <blockquote>
-        Whether math is a subject you enjoy or not, every person <i>truly is</i> a math person!
+        Whether math is easy or hard, every person <i>truly is</i> a math person!
     </blockquote>
 
     <a href="#">Dive into the Math!</a>
@@ -58,7 +61,6 @@
 <footer>
     <p>Amy Mayers — April 29, 2026</p>
 
-    <!-- ✅ ICONS ADDED -->
     <div class="footer-icons">
         <a href="mailto:example@email.com">
             <i class="fas fa-envelope"></i>
@@ -69,6 +71,15 @@
         </a>
     </div>
 </footer>
+
+<script>
+const toggle = document.querySelector('.hamburger');
+const navLinks = document.querySelector('nav ul');
+
+toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+</script>
 
 </body>
 </html>

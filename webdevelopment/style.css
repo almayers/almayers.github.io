@@ -11,6 +11,22 @@ body {
 }
 
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Center navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+
+
 
 h1 {
     color: #64748B;
@@ -33,6 +49,7 @@ h3 {
 p {
     color: #E2E8F0;
     line-height: 1.6;
+    text-align: center;
 }
 
 
@@ -44,10 +61,30 @@ main {
 }
 
 
+.hero {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Center button/link */
+.hero a {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+
+blockquote {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+    color: #E2E8F0;
+}
+
+
 section {
     margin-bottom: 20px;
 }
-
 
 
 .about-grid {
@@ -57,14 +94,14 @@ section {
     align-items: start;
 }
 
-
+/* Card-style sections */
 .about-grid section {
     background-color: rgba(255, 255, 255, 0.05);
     padding: 15px;
     border-radius: 10px;
 }
 
-
+/* Profile image */
 .profile-img {
     width: 100%;
     max-width: 300px;
@@ -73,6 +110,7 @@ section {
     border-radius: 10px;
 }
 
+/* Video fix */
 .resume-video {
     width: 100%;
     max-width: 500px;
@@ -81,6 +119,7 @@ section {
     margin: 0 auto;
     border-radius: 10px;
 }
+
 
 a {
     color: #14B8A6;
@@ -99,7 +138,7 @@ a:hover {
 .resource-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin: 20px auto;
     background: white;
     color: #1E3A8A;
     border: 2px solid #14B8A6;
@@ -109,6 +148,7 @@ a:hover {
 .resource-table td {
     padding: 12px;
     border: 1px solid #ccc;
+    text-align: center;
 }
 
 .resource-table thead {
@@ -125,7 +165,6 @@ footer {
     text-align: center;
     margin-top: 20px;
 }
-
 .footer-icons {
     margin-top: 10px;
 }
@@ -138,12 +177,13 @@ footer {
     transition: all 0.3s ease;
 }
 
-/* adding hover animation */
+/* ✨ Hover animation */
 .footer-icons a:hover {
     transform: scale(1.3);
     color: #0f766e;
     text-shadow: 0 0 10px rgba(20, 184, 166, 0.7);
 }
+
 @media (max-width: 900px) {
     .about-grid {
         grid-template-columns: 1fr;
@@ -159,7 +199,6 @@ footer {
         font-size: 36px;
     }
 
-    /* Better mobile table spacing */
     .resource-table th,
     .resource-table td {
         padding: 8px;

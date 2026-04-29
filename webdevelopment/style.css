@@ -1,3 +1,6 @@
+
+/* using custom font from Google staying with Poppins*/
+
 html, body {
     overflow-x: hidden;
 }
@@ -10,6 +13,8 @@ body {
     margin: 0;
 }
 
+/* my heading styles: custom style for each of the headers*/
+
 h1, h2, h3 {
     text-align: center;
 }
@@ -17,6 +22,7 @@ h1, h2, h3 {
 h1 {
     font-size: 48px;
     color: #64748B;
+
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
     letter-spacing: 2px;
 }
@@ -30,27 +36,27 @@ h3 {
     color: #64748B;
 }
 
+/* aplpying font to hero section specifically */
+
+.hero {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
 p {
     color: #E2E8F0;
     line-height: 1.6;
     text-align: center;
 }
 
+
 main {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
-}
-
-.hero {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.hero a {
-    display: inline-block;
-    margin-top: 15px;
 }
 
 blockquote {
@@ -60,6 +66,8 @@ blockquote {
     color: #E2E8F0;
 }
 
+/* my links*/
+
 a {
     color: #14B8A6;
     text-decoration: none;
@@ -68,6 +76,8 @@ a {
 a:hover {
     color: #0f766e;
 }
+
+/* table*/
 
 .table-container {
     width: 100%;
@@ -99,10 +109,14 @@ a:hover {
     background-color: #E0F2F1;
 }
 
+/* my footer */
+
 footer {
     text-align: center;
     margin-top: 20px;
 }
+
+/* added footer icons */
 
 .footer-icons {
     margin-top: 10px;
@@ -121,7 +135,6 @@ footer {
     color: #0f766e;
     text-shadow: 0 0 10px rgba(20, 184, 166, 0.7);
 }
-
 @media (max-width: 600px) {
     body {
         font-size: 14px;

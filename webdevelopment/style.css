@@ -10,7 +10,7 @@ body {
     margin: 0;
 }
 
-/* ================= HEADINGS ================= */
+
 
 h1 {
     color: #64748B;
@@ -29,14 +29,13 @@ h3 {
     text-align: center;
 }
 
-/* ================= TEXT ================= */
 
 p {
     color: #E2E8F0;
     line-height: 1.6;
 }
 
-/* ================= MAIN LAYOUT ================= */
+
 
 main {
     max-width: 1000px;
@@ -44,13 +43,12 @@ main {
     padding: 20px;
 }
 
-/* ================= GENERAL SECTION SPACING ================= */
 
 section {
     margin-bottom: 20px;
 }
 
-/* ================= ABOUT PAGE GRID ================= */
+
 
 .about-grid {
     display: grid;
@@ -59,14 +57,14 @@ section {
     align-items: start;
 }
 
-/* Card-style sections */
+
 .about-grid section {
     background-color: rgba(255, 255, 255, 0.05);
     padding: 15px;
     border-radius: 10px;
 }
 
-/* Profile image */
+
 .profile-img {
     width: 100%;
     max-width: 300px;
@@ -75,7 +73,6 @@ section {
     border-radius: 10px;
 }
 
-/* Video fix */
 .resume-video {
     width: 100%;
     max-width: 500px;
@@ -85,8 +82,6 @@ section {
     border-radius: 10px;
 }
 
-/* ================= LINKS ================= */
-
 a {
     color: #14B8A6;
     text-decoration: none;
@@ -95,8 +90,6 @@ a {
 a:hover {
     color: #0f766e;
 }
-
-/* ================= TABLE ================= */
 
 .table-container {
     width: 100%;
@@ -128,15 +121,29 @@ a:hover {
     background-color: #E0F2F1;
 }
 
-/* ================= FOOTER ================= */
-
 footer {
     text-align: center;
     margin-top: 20px;
 }
 
-/* ================= RESPONSIVE ================= */
+.footer-icons {
+    margin-top: 10px;
+}
 
+.footer-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #14B8A6;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* adding hover animation */
+.footer-icons a:hover {
+    transform: scale(1.3);
+    color: #0f766e;
+    text-shadow: 0 0 10px rgba(20, 184, 166, 0.7);
+}
 @media (max-width: 900px) {
     .about-grid {
         grid-template-columns: 1fr;

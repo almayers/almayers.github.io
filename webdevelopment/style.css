@@ -1,10 +1,13 @@
 html, body {
-    height: 100%; /* Ensure full height for the page */
-    background-color: #14B8A6; /* Set the teal background color */
-    margin: 0; /* Remove default margins */
-    color: #E2E8F0; /* Ensure the text color contrasts well with teal */
+    height: 100%; 
+    background-color: #14B8A6; 
+    background-image: url('https://raw.githubusercontent.com/your-username/your-repo-name/main/images/background1.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    margin: 0; 
+    color: #E2E8F0; 
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden; 
 }
 
 h1, h2, h3 {

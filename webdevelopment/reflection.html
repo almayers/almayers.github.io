@@ -9,20 +9,17 @@
 <link rel="shortcut icon" href="images/math.ico">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<!-- REQUIRED ICON LIBRARY -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="nav.css">
 </head>
 
 <body>
 
+<!-- ================= HEADER ================= -->
 <header>
 <img src="images/MayersLogo.png" alt="Mayers Math Logo">
 
-<button class="hamburger">☰</button>
+<button class="hamburger" aria-label="Open navigation menu">☰</button>
 
 <nav>
 <ul>
@@ -43,43 +40,47 @@
 </nav>
 </header>
 
+<!-- ================= MAIN ================= -->
 <main>
 
 <section class="reflection-box">
 
 <h1>Reflection and Learning Resources</h1>
 
-<!-- ANCHOR LINKS -->
+<!-- 🔗 ANCHOR LINKS -->
 <nav class="page-links">
-<a href="#reflection">Reflection</a>
-<a href="#resources">Resources</a>
-<a href="#table">Table</a>
+<a href="#reflection" aria-label="Jump to Reflection Section">Reflection</a>
+<a href="#resources" aria-label="Jump to Resources Section">Resources</a>
+<a href="#table" aria-label="Jump to Algebra Topic Table">Table</a>
 </nav>
 
+<!-- SECTION 1: Reflection -->
 <h2 id="reflection">Reflection</h2>
 
 <p>
-Creating this Algebra website helped me strengthen my understanding of HTML and CSS structure.
+Creating this Algebra website helped me strengthen my understanding of HTML structure and CSS styling.
 </p>
 
 <p>
-I learned how responsive design improves usability across devices.
+I learned how responsive design improves usability across different devices.
 </p>
 
 <p>
 This project also showed how web design can support math instruction.
 </p>
 
+<!-- SECTION 2: Math Resources -->
 <h2 id="resources">Math Resources</h2>
 
 <ul>
-<li><a href="https://www.khanacademy.org/math/algebra" target="_blank">Khan Academy</a></li>
-<li><a href="https://www.mathsisfun.com/algebra/index.html" target="_blank">Math is Fun</a></li>
-<li><a href="https://www.youtube.com/watch?v=b4mSqcJND3I" target="_blank">Exponent Rules Video</a></li>
-<li><a href="https://www.youtube.com/watch?v=d6L-ptO-5X0" target="_blank">Linear Equations Video</a></li>
-<li><a href="https://www.youtube.com/watch?v=4FMDqirfXIs" target="_blank">Algebraic Expressions Video</a></li>
+<li><a href="https://www.khanacademy.org/math/algebra" target="_blank" aria-label="Link to Khan Academy">Khan Academy</a></li>
+<li><a href="https://www.mathsisfun.com/algebra/index.html" target="_blank" aria-label="Link to Math is Fun">Math is Fun</a></li>
+<li><a href="https://www.youtube.com/watch?v=b4mSqcJND3I" target="_blank" aria-label="Exponent Rules Video">Exponent Rules Video</a></li>
+<li><a href="https://www.youtube.com/watch?v=d6L-ptO-5X0" target="_blank" aria-label="Linear Equations Video">Linear Equations Video</a></li>
+<li><a href="https://www.youtube.com/watch?v=4FMDqirfXIs" target="_blank" aria-label="Algebraic Expressions Video">Algebraic Expressions Video</a></li>
 </ul>
 
+<!-- SECTION 3: Algebra Topic Table -->
 <h2 id="table">Algebra Topic Table</h2>
 
 <div class="table-container">
@@ -122,7 +123,7 @@ This project also showed how web design can support math instruction.
 
 <tfoot>
 <tr>
-<td colspan="3">These resources support independent learning.</td>
+<td colspan="3">These resources support independent math learning.</td>
 </tr>
 </tfoot>
 
@@ -134,20 +135,22 @@ This project also showed how web design can support math instruction.
 
 </main>
 
+<!-- ================= FOOTER ================= -->
 <footer>
 <p>&copy; 2026 Amy Mayers</p>
 <p>Email: amy@example.com | Phone: (123) 456-7890</p>
 
 <div class="footer-icons">
-<i class="fas fa-envelope"></i>
-<i class="fas fa-phone"></i>
+<i class="fas fa-envelope" aria-label="Email icon"></i>
+<i class="fas fa-phone" aria-label="Phone icon"></i>
 </div>
 </footer>
 
+<!-- ================= JS ================= -->
 <script>
-document.querySelector('.hamburger').onclick = () => {
-document.querySelector('nav ul').classList.toggle('active');
-};
+document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('nav ul').classList.toggle('active');
+});
 </script>
 
 </body>

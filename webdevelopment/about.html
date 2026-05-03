@@ -1,101 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="nav.css">
+<link rel="shortcut icon" href="images/math.ico">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="nav.css">
 </head>
 
 <body>
 
 <header>
-  <img src="images/MayersLogo.png" alt="Mayers Math Logo">
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="mathcontent.html">Math Content</a>
-        <ul class="dropdown">
-          <li><a href="exponents.html">Exponents</a></li>
-          <li><a href="linearequations.html">Linear Equations</a></li>
-          <li><a href="expressions.html">Algebraic Expressions</a></li>
-        </ul>
-      </li>
-      <li><a href="reflection.html">Reflection and Resources</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<img src="images/MayersLogo.png">
+<button class="hamburger">☰</button>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+
+<li><a href="mathcontent.html">Math Content</a>
+<ul class="dropdown">
+<li><a href="exponents.html">Exponents</a></li>
+<li><a href="linearequations.html">Linear Equations</a></li>
+<li><a href="expressions.html">Algebraic Expressions</a></li>
+</ul>
+</li>
+
+<li><a href="reflection.html">Reflection</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
 </header>
 
-<main class="about-grid">
+<main>
+<h1>Amy Mayers</h1>
+<img src="images/Amy.jpg" alt="Teacher">
 
-    <section class="about-header">
-        <h1>Amy Mayers</h1>
-        <h2>Mathematics Instructor</h2>
-    </section>
+<p>Math teacher with 16 years of experience.</p>
 
-    <section class="headshot">
-        <img src="images/Amy.jpg" alt="Amy Mayers teaching mathematics" class="profile-img">
-    </section>
+<a href="MayersResume.pdf" class="resume-link">Download Resume</a>
 
-    <section class="intro-text">
-        <p>
-            My name is Amy Mayers and I have been teaching Mathematics for about 16 years. I
-            spent the first 8 years in brick and mortar schools before transitioning to virtual education.
-            I have experience teaching both Middle School and High School students in remedial and honors courses.
-        </p>
-    </section>
-
-    <section class="education">
-        <h3>Education</h3>
-        <p>
-            BS in Mathematical Sciences<br>
-            Masters Degree in Curriculum and Instruction
-        </p>
-    </section>
-
-    <section class="resume">
-        <h3>Resume</h3>
-        <a href="MayersResume.pdf" class="resume-link" target="_blank">
-            Download Resume
-        </a>
-    </section>
-
-    <section class="quote">
-        <h3>Quote</h3>
-        <p>"Mathematics is the key to understanding the world."</p>
-    </section>
-
-    <section class="left-text">
-        <p>
-            I have worked with a wide range of learners and pride myself on adapting instruction
-            to meet student needs in both in-person and virtual environments.
-        </p>
-    </section>
-
-    <section class="video">
-        <video controls class="resume-video">
-            <source src="images/resume.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </section>
-
-    <section class="right-text">
-        <p>
-            My teaching philosophy focuses on building confidence and problem-solving skills
-            so students can succeed in mathematics and beyond.
-        </p>
-    </section>
-
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/d6L-ptO-5X0"
+allowfullscreen></iframe>
 </main>
 
 <footer>
-    <p>Amy Mayers — April 9, 2026</p>
+<p>&copy; 2026 Amy Mayers</p>
+<p>Email: fake@email.com</p>
+<p>Phone: (123) 456-7890</p>
+
+<div class="footer-icons">
+<i class="fas fa-envelope"></i>
+<i class="fas fa-phone"></i>
+</div>
 </footer>
+
+<script>
+document.querySelector('.hamburger').onclick = () => {
+document.querySelector('nav ul').classList.toggle('active');
+};
+</script>
 
 </body>
 </html>

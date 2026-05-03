@@ -1,17 +1,12 @@
 html, body {
-    overflow-x: hidden;
-}
-
-body {
+    height: 100%; /* Ensure full height for the page */
+    background-color: #14B8A6; /* Set the teal background color */
+    margin: 0; /* Remove default margins */
+    color: #E2E8F0; /* Ensure the text color contrasts well with teal */
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    color: #E2E8F0;
-
-    background-image: url("images/background.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
+
 
 h1, h2, h3 {
     text-align: center;
@@ -20,22 +15,49 @@ h1, h2, h3 {
 h1 {
     font-size: 48px;
     color: #64748B;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
+
+h2 {
+    color: #14B8A6;
+}
+
+h3 {
+    color: #E2E8F0;
+}
+
 
 p {
     text-align: center;
     line-height: 1.6;
 }
 
+
+.hero {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+a {
+    color: #14B8A6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0f766e;
+}
+
+
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 20px;
+    align-items: center;
 }
 
-/* TABLE */
 .table-container {
     width: 100%;
     overflow-x: auto;
@@ -54,6 +76,21 @@ p {
     padding: 10px;
     text-align: center;
 }
+
+.resource-table thead {
+    background-color: #14B8A6;
+    color: white;
+}
+
+.resume-link {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 2px solid #14B8A6;
+    background: white;
+    color: #1E3A8A;
+    margin-top: 10px;
+}
+
 
 .contact-container {
     max-width: 600px;
@@ -84,6 +121,7 @@ button:hover {
     background: #0f766e;
 }
 
+
 img {
     transition: transform 0.3s ease;
 }
@@ -92,12 +130,9 @@ img:hover {
     transform: scale(1.05);
 }
 
-iframe {
-    width: 100%;
-    max-width: 560px;
-}
-
 footer {
+    background-color: #14B8A6; /* Set the footer to match the page background */
+    color: #E2E8F0; /* Light text for contrast */
     text-align: center;
     padding: 20px;
 }
@@ -108,36 +143,41 @@ footer {
     color: #14B8A6;
 }
 
+
 @media (max-width: 768px) {
-    .about-grid {
-        grid-template-columns: 1fr;
+
+    body {
+        font-size: 14px;
     }
 
     h1 {
         font-size: 32px;
     }
-}
 
-@media (max-width: 768px) {
-    .content-section {
-        display: flex;
-        flex-direction: column;
+    .about-grid {
+        grid-template-columns: 1fr; /* layout change REQUIRED */
     }
-}
 
-@media print {
-    nav,
-    footer,
     .hamburger {
+        display: block;
+    }
+
+    nav ul {
         display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #1E3A8A;
+        position: absolute;
+        top: 100%;
+        left: 0;
     }
 
-    body {
-        background: white;
-        color: black;
+    nav ul.active {
+        display: flex;
     }
-}
 
-a:focus {
-    outline: 3px solid #14B8A6;
+    nav ul li ul.dropdown {
+        position: static;
+        background-color: #142a66;
+    }
 }

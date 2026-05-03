@@ -10,7 +10,6 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<!-- REQUIRED ICON LIBRARY -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <link rel="stylesheet" href="style.css">
@@ -51,8 +50,6 @@
 
 <form>
 
-<div class="form-row">
-
 <div class="form-group">
 <label for="title">Title</label>
 <select id="title" name="title" required>
@@ -67,8 +64,6 @@
 <div class="form-group">
 <label for="name">Full Name</label>
 <input type="text" id="name" name="name" required>
-</div>
-
 </div>
 
 <div class="form-group">
@@ -104,15 +99,15 @@
 <p>Email: amy@example.com | Phone: (123) 456-7890</p>
 
 <div class="footer-icons">
-<i class="fas fa-envelope"></i>
-<i class="fas fa-phone"></i>
+<i class="fas fa-envelope" aria-label="Email icon"></i>
+<i class="fas fa-phone" aria-label="Phone icon"></i>
 </div>
 </footer>
 
 <script>
-document.querySelector('.hamburger').onclick = () => {
-document.querySelector('nav ul').classList.toggle('active');
-};
+document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('nav ul').classList.toggle('active');
+});
 </script>
 
 </body>

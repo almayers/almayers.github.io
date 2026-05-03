@@ -38,12 +38,13 @@ p {
 }
 
 a {
-    color: #14B8A6;
-    text-decoration: none;
+    color: #14B8A6; /* Ensure links are visible without hovering */
+    text-decoration: none; /* Remove underline */
 }
 
 a:hover {
-    color: #0f766e;
+    color: #0f766e; /* Color change on hover */
+    text-decoration: underline; /* Underline added on hover */
 }
 
 .table-container {

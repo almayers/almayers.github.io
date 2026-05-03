@@ -7,7 +7,6 @@ html, body {
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-
 h1, h2, h3 {
     text-align: center;
 }
@@ -26,12 +25,10 @@ h3 {
     color: #E2E8F0;
 }
 
-
 p {
     text-align: center;
     line-height: 1.6;
 }
-
 
 .hero {
     text-align: center;
@@ -48,7 +45,6 @@ a {
 a:hover {
     color: #0f766e;
 }
-
 
 .about-grid {
     display: grid;
@@ -88,9 +84,19 @@ a:hover {
     border: 2px solid #14B8A6;
     background: white;
     color: #1E3A8A;
-    margin-top: 10px;
+    margin-top: 20px;
+    text-align: center; /* Ensures text inside button is centered */
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    width: 200px; /* Optional: Adjust the button width */
+    margin: 20px auto; /* This centers the button horizontally */
 }
 
+.resume-link:hover {
+    background-color: #14B8A6;
+    color: white;
+}
 
 .contact-container {
     max-width: 600px;
@@ -121,7 +127,6 @@ button:hover {
     background: #0f766e;
 }
 
-
 img {
     transition: transform 0.3s ease;
 }
@@ -143,9 +148,7 @@ footer {
     color: #14B8A6;
 }
 
-
 @media (max-width: 768px) {
-
     body {
         font-size: 14px;
     }

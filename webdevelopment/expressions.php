@@ -1,54 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Algebraic Expressions</title>
-    <link rel="shortcut icon" href="images/math.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="nav.css">
-</head>
-<body>
-
-<header>
-    <img src="images/MayersLogo.png" alt="Logo">
-    <button class="hamburger">☰</button>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="mathcontent.html">Math Content</a>
-                <ul class="dropdown">
-                    <li><a href="exponents.html">Exponents</a></li>
-                    <li><a href="linearequations.html">Linear Equations</a></li>
-                    <li><a href="expressions.html">Expressions</a></li>
-                </ul>
-            </li>
-            <li><a href="reflection.html">Reflection</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+<?php include 'header.php'; ?>
 
 <main>
     <section class="hero">
         <h1>Algebraic Expressions</h1>
-        <p>Students will be able to simplify and evaluate algebraic expressions by correctly using order of operations, combining like terms, and applying basic properties of numbers as prerequisites for solving equations.</p>
-        <h2>What is an algebraic expression?</h2>
-        <p>An algebraic expression is a math phrase made up of numbers, variables, and operations (addition, subtraction, multiplication, division). Unlike equations, expressions do not have an equal sign.</p>
 
-        <h3>What are the parts of an Algebraic Expression?</h3>
+        <p>Students will be able to simplify and evaluate algebraic expressions by correctly using order of operations, combining like terms, and applying basic properties of numbers as prerequisites for solving equations.</p>
+
+        <h2>What is an algebraic expression?</h2>
+        <p>An algebraic expression is a math phrase made up of numbers, variables, and operations. Unlike equations, expressions do not have an equal sign.</p>
+
+        <h3>Parts of an Algebraic Expression</h3>
         <ul>
-            <li><strong>Variable:</strong> A letter that represents an unknown number like x or y</li>
-            <li><strong>Coefficient:</strong> The number in front of a variable. In 5x, it is 5.</li>
-            <li><strong>Constant:</strong> A number without a variable like 10 or -2</li>
-            <li><strong>Term:</strong> A part of an expression separated by + or −. In 2x+3 we have two terms, 2x and 3.</li>
+            <li><strong>Variable:</strong> A letter like x or y</li>
+            <li><strong>Coefficient:</strong> The number in front (5 in 5x)</li>
+            <li><strong>Constant:</strong> A number alone like 10</li>
+            <li><strong>Term:</strong> Parts separated by + or −</li>
         </ul>
 
-        <h3>We can write algebraic expressions using key terminology to indicate the types of operations. Use the image below for hints and tips at key words!</h3>
-        <p>Ex: The sum of a number and 4.<br> x + 4 = 10 where "a number" is x, sum means add</p>
-        <p>Ex: Five less than 2 times a number.<br> 2x - 5 where "five less than" indicates subtraction from the first value.</p>
+        <h3>Writing Expressions</h3>
+        <p>Ex: The sum of a number and 4 → x + 4</p>
+        <p>Ex: Five less than 2 times a number → 2x − 5</p>
     </section>
 
     <section class="image-section">
@@ -56,20 +27,4 @@
     </section>
 </main>
 
-<footer>
-    <p> 2026 Amy Mayers</p>
-    <p>Email: amy@example.com | Phone: (123) 456-7890</p>
-    <div class="footer-icons">
-        <i class="fas fa-envelope"></i>
-        <i class="fas fa-phone"></i>
-    </div>
-</footer>
-
-<script>
-    document.querySelector('.hamburger').onclick = () => {
-        document.querySelector('nav ul').classList.toggle('active');
-    };
-</script>
-
-</body>
-</html>
+<?php include 'footer.php'; ?>

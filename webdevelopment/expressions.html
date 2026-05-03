@@ -1,91 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Algebraic Expressions</title>
-
-<link rel="shortcut icon" href="images/math.ico">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="nav.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebraic Expressions</title>
+    
+    <link rel="shortcut icon" href="images/math.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
 </head>
 
 <body>
 
 <header>
-<img src="images/MayersLogo.png" alt="Mayers Math Logo">
+    <img src="images/MayersLogo.png" alt="Logo">
 
-<button class="hamburger">☰</button>
+    <button class="hamburger">☰</button>
 
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-
-<li>
-<a href="mathcontent.html">Math Content</a>
-<ul class="dropdown">
-<li><a href="exponents.html">Exponents</a></li>
-<li><a href="linearequations.html">Linear Equations</a></li>
-<li><a href="expressions.html">Algebraic Expressions</a></li>
-</ul>
-</li>
-
-<li><a href="reflection.html">Reflection</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="mathcontent.html">Math Content</a>
+                <ul class="dropdown">
+                    <li><a href="exponents.html">Exponents</a></li>
+                    <li><a href="linearequations.html">Linear Equations</a></li>
+                    <li><a href="expressions.html">Expressions</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">Reflection</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
 
-<section class="content-section">
+    <!-- Algebraic Expressions Section -->
+    <section class="hero">
+        <h1>Understanding Algebraic Expressions</h1>
+        <p>Students will be able to simplify and evaluate algebraic expressions by correctly using order of operations, combining like terms, and applying basic properties of numbers as prerequisites for solving equations.</p>
+    </section>
 
-<h1>Algebraic Expressions</h1>
+    <!-- Algebraic Expression Explanation Section -->
+    <section class="algebraic-expressions">
+        <h2>What is an algebraic expression?</h2>
+        <p>An algebraic expression is a math phrase made up of numbers, variables, and operations (addition, subtraction, multiplication, division). Unlike equations, expressions do not have an equal sign.</p>
 
-<p>Simplify expressions by combining like terms.</p>
+        <h2>What are the parts of an Algebraic Expression?</h2>
+        <ul>
+            <li><strong>Variable:</strong> A letter that represents an unknown number like x or y</li>
+            <li><strong>Coefficient:</strong> The number in front of a variable. In 5x, it is 5.</li>
+            <li><strong>Constant:</strong> A number without a variable like 10 or -2</li>
+            <li><strong>Term:</strong> A part of an expression separated by + or −. In 2x+3 we have two terms, 2x and 3.</li>
+        </ul>
 
-<h3>Example</h3>
+        <p>We can write algebraic expressions using key terminology to indicate the types of operations. Use the image below for hints and tips at key words!</p>
 
-<figure>
-<img src="images/Operations.png" alt="Expression Example">
-<figcaption>2x + 3</figcaption>
-</figure>
+        <h3>Examples:</h3>
 
-<ul>
-<li>Variable</li>
-<li>Coefficient</li>
-<li>Constant</li>
-</ul>
+        <div class="example">
+            <h4>Ex: The sum of a number and 4.</h4>
+            <p><strong>Expression:</strong> x + 4 = 10, where "a number" is x and "sum" means add.</p>
+        </div>
 
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/4FMDqirfXIs"
-title="Expressions Video"
-allowfullscreen></iframe>
-
-</section>
+        <div class="example">
+            <h4>Ex: Five less than 2 times a number.</h4>
+            <p><strong>Expression:</strong> 2x - 5, where "5 less than" indicates subtraction from the first value.</p>
+        </div>
+    </section>
 
 </main>
 
 <footer>
-<p>&copy; 2026 Amy Mayers</p>
-<p>Email: fake@email.com</p>
-<p>Phone: (123) 456-7890</p>
+    <p> 2026 Amy Mayers</p>
+    <p>Email: amy@example.com | Phone: (123) 456-7890</p>
 
-<div class="footer-icons">
-<i class="fas fa-envelope"></i>
-<i class="fas fa-phone"></i>
-</div>
+    <div class="footer-icons">
+        <i class="fas fa-envelope"></i>
+        <i class="fas fa-phone"></i>
+    </div>
 </footer>
 
 <script>
-document.querySelector('.hamburger').onclick = () => {
-document.querySelector('nav ul').classList.toggle('active');
-};
+    document.querySelector('.hamburger').onclick = () => {
+        document.querySelector('nav ul').classList.toggle('active');
+    };
 </script>
 
 </body>

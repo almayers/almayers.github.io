@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Equations</title>
+    
+    <link rel="shortcut icon" href="images/math.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+
+<header>
+    <img src="images/MayersLogo.png" alt="Logo">
+
+    <button class="hamburger">☰</button>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="mathcontent.html">Math Content</a>
+                <ul class="dropdown">
+                    <li><a href="exponents.html">Exponents</a></li>
+                    <li><a href="linearequations.html">Linear Equations</a></li>
+                    <li><a href="expressions.html">Expressions</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">Reflection</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Linear Equations Section -->
+    <section class="hero">
+        <h1>Linear Equations</h1>
+        <p>Students will be able to solve one-variable linear equations by applying properties of equality and inverse operations, and justify each step algebraically.</p>
+    </section>
+
+    <!-- Linear Equations Explanation Section -->
+    <section class="linear-equations">
+        <h2>What does it mean to solve an equation?</h2>
+        <p>To solve a linear equation means to find the value of the variable that makes the equation true. You can think of an equation like a balance scale. This means, whatever you do to one side, you must do to the other side to keep it balanced. Your goal is to get the variable by itself on one side of the equation. Below is a step by step strategy you can use for all basic problems.</p>
+
+        <h3>Step-by-Step Strategy:</h3>
+        <ol>
+            <li>Simplify both sides (combine like terms if needed).</li>
+            <li>Undo addition or subtraction first using inverse operations.</li>
+            <li>Undo multiplication or division last using inverse operations.</li>
+            <li>Check your answer by plugging it back into the original equation.</li>
+        </ol>
+
+        <h3>Example 1:</h3>
+        <div class="example">
+            <h4>Ex: Solve x + 5 = 12</h4>
+            <p>Since the problem is currently adding by 5, we need to "undo" this by subtracting 5 from both sides.</p>
+            <p><strong>Solution:</strong> x = 12 - 5 = 7</p>
+        </div>
+
+        <h3>Example 2:</h3>
+        <div class="example">
+            <h4>Ex: Solve 3x - 4 = 11</h4>
+            <p>This problem has two steps. First, since the problem is currently subtracting by 4, we must "undo" this by adding 4 to both sides.</p>
+            <p><strong>Solution Step 1:</strong> 3x = 11 + 4 = 15</p>
+            <p>Next, we have 3x which indicates multiplication, or 3 times x. To "undo" this, we should divide both sides by 3.</p>
+            <p><strong>Solution Step 2:</strong> x = 15 ÷ 3 = 5</p>
+        </div>
+    </section>
+
+    <!-- Add your image below -->
+    <div class="image-section">
+        <img src="https://raw.githubusercontent.com/almayers/almayers.github.io/main/webdevelopment/images/inverse.png" alt="Inverse Operations">
+    </div>
+
+</main>
+
+<footer>
+    <p>2026 Amy Mayers</p>
+    <p>Email: amy@example.com | Phone: (123) 456-7890</p>
+
+    <div class="footer-icons">
+        <i class="fas fa-envelope"></i>
+        <i class="fas fa-phone"></i>
+    </div>
+</footer>
+
+<script>
+    document.querySelector('.hamburger').onclick = () => {
+        document.querySelector('nav ul').classList.toggle('active');
+    };
+</script>
+
+</body>
+</html>

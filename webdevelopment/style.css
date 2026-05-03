@@ -37,15 +37,23 @@ p {
     padding: 40px 20px;
 }
 
-/* Links on the Reflection page */
-.reflection-page a {
-    color: #1E3A8A; /* Blue color for links */
+a {
+    color: #14B8A6;
     text-decoration: none;
 }
 
+a:hover {
+    color: #14B8A6;
+    text-decoration: none;
+}
+.reflection-page a {
+    color: #1E3A8A;
+    text-decoration: none; 
+}
+
 .reflection-page a:hover {
-    color: #0f4a63; /* Darker blue on hover */
-    text-decoration: underline;
+    color: #1E3A8A; 
+    text-decoration: none; 
 }
 
 .table-container {
@@ -197,4 +205,26 @@ img {
     height: auto;
     display: block;
     margin: 0 auto;
+}
+.resource-table th,
+.resource-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-icons i {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #14B8A6;
+}
+
+.navbar,
+.footer {
+    background-color: #14B8A6;
+    color: #E2E8F0;
+}
+
+footer {
+    padding: 20px;
 }

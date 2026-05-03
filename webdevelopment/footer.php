@@ -4,8 +4,8 @@
      Phone: <a href="tel:1234567890">(123) 456-7890</a></p>
 
   <div>
-    <img src="images/icon1.png" alt="Icon 1" width="40">
-    <img src="images/icon2.png" alt="Icon 2" width="40">
+    <img src="images/email.png" alt="Icon 1" width="40">
+    <img src="images/phone.png" alt="Icon 2" width="40">
   </div>
 </footer>
 

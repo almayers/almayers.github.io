@@ -1,88 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
 
-    <!-- using custom google fonts: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/math.ico">
 
-    <!-- using Awesome font for footer icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="nav.css">
 </head>
 
 <body>
 
 <header>
-    <img src="images/MayersLogo.png" alt="Mayers Math Logo">
+<img src="images/MayersLogo.png" alt="Mayers Math Logo">
 
-    <button class="hamburger" aria-label="Toggle navigation">☰</button>
+<button class="hamburger">☰</button>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
 
-            <li><a href="mathcontent.html">Math Content</a>
-                <ul class="dropdown">
-                    <li><a href="exponents.html">Exponents</a></li>
-                    <li><a href="linearequations.html">Linear Equations</a></li>
-                    <li><a href="expressions.html">Algebraic Expressions</a></li>
-                </ul>
-            </li>
+<li><a href="mathcontent.html">Math Content</a>
+<ul class="dropdown">
+<li><a href="exponents.html">Exponents</a></li>
+<li><a href="linearequations.html">Linear Equations</a></li>
+<li><a href="expressions.html">Algebraic Expressions</a></li>
+</ul>
+</li>
 
-            <li><a href="reflection.html">Reflection and Resources</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<li><a href="reflection.html">Reflection</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
 </header>
 
 <main>
 <section class="hero">
-    <h1>Welcome to Math!</h1>
-
-    <h3>Hello and welcome to Mrs. Mayers’ Algebra resource website!</h3>
-
-    <p>
-        I am so excited you are here and I hope these lessons help you improve your Algebra skills.
-    </p>
-
-    <blockquote>
-        Whether math is easy or hard, every person <i>truly is</i> a math person!
-    </blockquote>
-
-    <a href="#">Dive into the Math!</a>
+<h1>Welcome to Math!</h1>
+<p>Build your Algebra skills with engaging lessons.</p>
+<blockquote>Every student is a math person!</blockquote>
 </section>
 </main>
 
 <footer>
-    <p>Amy Mayers — May 3, 2026</p>
+<p>&copy; 2026 Amy Mayers</p>
+<p>Email: fake@email.com</p>
+<p>Phone: (123) 456-7890</p>
 
-    <div class="footer-contact">
-        <p>Email: fake@email.com</p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Address: 123 Main Street, Your City, TX</p>
-    </div>
-
-    <div class="footer-icons">
-        <i class="fas fa-envelope"></i>
-        <i class="fas fa-phone"></i>
-    </div>
+<div class="footer-icons">
+<i class="fas fa-envelope"></i>
+<i class="fas fa-phone"></i>
+</div>
 </footer>
 
 <script>
-const toggle = document.querySelector('.hamburger');
-const navLinks = document.querySelector('nav ul');
-
-toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
+document.querySelector('.hamburger').onclick = () => {
+document.querySelector('nav ul').classList.toggle('active');
+};
 </script>
 
 </body>

@@ -35,9 +35,6 @@ p {
     max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
-    background: url('https://raw.githubusercontent.com/YourUsername/YourRepo/PathToImages/background1.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #E2E8F0; 
 }
 
 a {
@@ -47,14 +44,6 @@ a {
 
 a:hover {
     color: #0f766e;
-}
-
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-    align-items: center;
 }
 
 .table-container {
@@ -130,6 +119,7 @@ button:hover {
     background: #0f766e;
 }
 
+
 img {
     transition: transform 0.3s ease;
 }
@@ -139,8 +129,8 @@ img:hover {
 }
 
 footer {
-    background-color: #14B8A6; 
-    color: #E2E8F0; 
+    background-color: #14B8A6;
+    color: #E2E8F0;
     text-align: center;
     padding: 20px;
 }
@@ -161,7 +151,7 @@ footer {
     }
 
     .about-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
     }
 
     .hamburger {
@@ -188,18 +178,22 @@ footer {
     }
 }
 
-@media (max-width: 1024px) {
-    .hero {
-        padding: 40px 20px;
-    }
-
-    .resume-link {
-        width: 250px; 
-    }
+.image-section {
+    text-align: center;
+    margin-top: 20px;
 }
 
-@media (min-width: 1025px) {
-    .hero {
-        padding: 80px 40px;
-    }
+.operations-image, .exponent-rules-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }

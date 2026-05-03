@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+
+<link rel="shortcut icon" href="images/math.ico">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+
+<header>
+<img src="images/MayersLogo.png">
+
+<button class="hamburger">☰</button>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="mathcontent.html">Math Content</a></li>
+<li><a href="reflection.html">Reflection</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main class="about-grid">
+
+<section>
+<h1>Amy Mayers</h1>
+<p>Math Teacher</p>
+</section>
+
+
+<section>
+<img src="images/Amy.jpg" alt="Teacher">
+</section>
+
+
+<section>
+    <h2>About Me</h2>
+    <p>My name is Amy Mayers and I have been teaching Mathematics for about 16 years. I spent the first 8 years of my career teaching within brick and mortar schools, and later translated to virtual education. With experience in both Middle School and High School math education, I have worked with both remedial courses as well as honors courses. I hold a BS in Mathematical Sciences as well as a Masters Degree in Curriculum and Instruction. My formal education and practical applications have created a level of expertise in both in person and virtual education for secondary math students.</p>
+</section>
+
+
+<section>
+    <a class="resume-link" href="MayersResume.pdf">Download Resume</a>
+</section>
+
+
+<section>
+<iframe width="100%" height="250" src="https://drive.google.com/file/d/1omTg9czBVcs7OJCCd7yHG4m2rVjoggdk/preview" allowfullscreen></iframe>
+</section>
+
+</main>
+
+
+<footer>
+<p> 2026 Amy Mayers</p>
+<p>Email: amy@example.com | Phone: (123) 456-7890</p>
+</footer>
+
+<script>
+document.querySelector('.hamburger').onclick = () => {
+document.querySelector('nav ul').classList.toggle('active');
+};
+</script>
+
+</body>
+</html>

@@ -14,8 +14,8 @@
 
     <!-- Two Small Images -->
     <div class="footer-images">
-      <img src="images/icon1.png" alt="Icon 1" width="40">
-      <img src="images/icon2.png" alt="Icon 2" width="40">
+      <img src="images/email.png" alt="Icon 1" width="40">
+      <img src="images/phone.png" alt="Icon 2" width="40">
     </div>
 
   </div>

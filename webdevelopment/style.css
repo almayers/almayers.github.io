@@ -1,7 +1,3 @@
-/* =========================
-   GLOBAL STYLES
-========================= */
-
 html, body {
     overflow-x: hidden;
 }
@@ -11,17 +7,14 @@ body {
     margin: 0;
     color: #E2E8F0;
 
-    /* ✅ FIX: Background image requirement */
+    /* REQUIRED: background image */
     background-image: url("images/background.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
 
-/* =========================
-   HEADINGS
-========================= */
-
+/* HEADINGS */
 h1, h2, h3 {
     text-align: center;
 }
@@ -32,39 +25,21 @@ h1 {
     text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
 }
 
-h2 {
-    color: #14B8A6;
-}
-
-h3 {
-    color: #E2E8F0;
-}
-
-/* =========================
-   TEXT
-========================= */
-
+/* TEXT */
 p {
     text-align: center;
     line-height: 1.6;
 }
 
-/* =========================
-   GRID
-========================= */
-
+/* GRID */
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 20px;
-    align-items: center;
 }
 
-/* =========================
-   TABLE
-========================= */
-
+/* TABLE */
 .table-container {
     width: 100%;
     overflow-x: auto;
@@ -84,28 +59,7 @@ p {
     text-align: center;
 }
 
-.resource-table thead {
-    background-color: #14B8A6;
-    color: white;
-}
-
-/* =========================
-   PDF BOX MODEL
-========================= */
-
-.resume-link {
-    display: inline-block;
-    padding: 10px 15px;
-    border: 2px solid #14B8A6;
-    background: white;
-    color: #1E3A8A;
-    margin-top: 10px;
-}
-
-/* =========================
-   FORM
-========================= */
-
+/* FORM */
 .contact-container {
     max-width: 600px;
     margin: auto;
@@ -135,33 +89,22 @@ button:hover {
     background: #0f766e;
 }
 
-/* =========================
-   IMAGES ANIMATION
-========================= */
-
-.content-section img,
-.about-grid img {
+/* IMAGE ANIMATION */
+img {
     transition: transform 0.3s ease;
 }
 
-.content-section img:hover,
-.about-grid img:hover {
+img:hover {
     transform: scale(1.05);
 }
 
-/* =========================
-   IFRAME FIX (RESPONSIVE VIDEO)
-========================= */
-
+/* IFRAME RESPONSIVE */
 iframe {
     width: 100%;
     max-width: 560px;
 }
 
-/* =========================
-   FOOTER
-========================= */
-
+/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
@@ -173,44 +116,27 @@ footer {
     color: #14B8A6;
 }
 
-/* =========================
-   MOBILE LAYOUT CHANGE #1
-========================= */
-
+/* MOBILE LAYOUT 1 */
 @media (max-width: 768px) {
-
-    body {
-        font-size: 14px;
+    .about-grid {
+        grid-template-columns: 1fr;
     }
 
     h1 {
         font-size: 32px;
     }
-
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
-/* =========================
-   MOBILE LAYOUT CHANGE #2 (REQUIRED SECOND PAGE DIFFERENCE)
-========================= */
-
+/* MOBILE LAYOUT 2 (DIFFERENT PAGE BEHAVIOR) */
 @media (max-width: 768px) {
-
     .content-section {
         display: flex;
         flex-direction: column;
-        padding: 10px;
     }
 }
 
-/* =========================
-   PRINT QUERY (REQUIRED FIX)
-========================= */
-
+/* PRINT QUERY */
 @media print {
-
     nav,
     footer,
     .hamburger {
@@ -221,4 +147,9 @@ footer {
         background: white;
         color: black;
     }
+}
+
+/* ACCESSIBILITY FIX */
+a:focus {
+    outline: 3px solid #14B8A6;
 }

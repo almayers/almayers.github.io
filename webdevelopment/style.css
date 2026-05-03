@@ -9,8 +9,13 @@ html, body {
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    background-color: #1E3A8A;
     color: #E2E8F0;
+
+    /* ✅ FIX: Background image requirement */
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 /* =========================
@@ -45,31 +50,7 @@ p {
 }
 
 /* =========================
-   HERO SECTION
-========================= */
-
-.hero {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-/* =========================
-   LINKS
-========================= */
-
-a {
-    color: #14B8A6;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #0f766e;
-}
-
-/* =========================
-   GRID (REQUIRED LAYOUT)
+   GRID
 ========================= */
 
 .about-grid {
@@ -109,7 +90,7 @@ a:hover {
 }
 
 /* =========================
-   PDF / BOX MODEL
+   PDF BOX MODEL
 ========================= */
 
 .resume-link {
@@ -155,15 +136,26 @@ button:hover {
 }
 
 /* =========================
-   ANIMATION (REQUIRED)
+   IMAGES ANIMATION
 ========================= */
 
-img {
+.content-section img,
+.about-grid img {
     transition: transform 0.3s ease;
 }
 
-img:hover {
+.content-section img:hover,
+.about-grid img:hover {
     transform: scale(1.05);
+}
+
+/* =========================
+   IFRAME FIX (RESPONSIVE VIDEO)
+========================= */
+
+iframe {
+    width: 100%;
+    max-width: 560px;
 }
 
 /* =========================
@@ -182,7 +174,7 @@ footer {
 }
 
 /* =========================
-   MOBILE (IMPORTANT LAYOUT CHANGE)
+   MOBILE LAYOUT CHANGE #1
 ========================= */
 
 @media (max-width: 768px) {
@@ -196,6 +188,37 @@ footer {
     }
 
     .about-grid {
-        grid-template-columns: 1fr; /* layout change REQUIRED */
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   MOBILE LAYOUT CHANGE #2 (REQUIRED SECOND PAGE DIFFERENCE)
+========================= */
+
+@media (max-width: 768px) {
+
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+/* =========================
+   PRINT QUERY (REQUIRED FIX)
+========================= */
+
+@media print {
+
+    nav,
+    footer,
+    .hamburger {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
     }
 }

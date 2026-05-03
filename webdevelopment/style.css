@@ -1,19 +1,19 @@
 
-/* using custom font from Google staying with Poppins*/
+/* =========================
+   GLOBAL STYLES
+========================= */
 
 html, body {
     overflow-x: hidden;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    color: #64748B;
-    font-size: 16px;
-    background-color: #1E3A8A;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1E3A8A;
+    color: #E2E8F0;
 }
 
-/* my heading styles: custom style for each of the headers*/
+/* =========================
+   TYPOGRAPHY
+========================= */
 
 h1, h2, h3 {
     text-align: center;
@@ -21,10 +21,8 @@ h1, h2, h3 {
 
 h1 {
     font-size: 48px;
-    color: #64748B;
-
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-    letter-spacing: 2px;
+    color: #E2E8F0;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
 }
 
 h2 {
@@ -33,40 +31,39 @@ h2 {
 
 h3 {
     font-size: 22px;
-    color: #64748B;
 }
-
-/* aplpying font to hero section specifically */
-
-.hero {
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
 
 p {
-    color: #E2E8F0;
     line-height: 1.6;
     text-align: center;
 }
 
+/* =========================
+   MAIN LAYOUT
+========================= */
 
 main {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: auto;
     padding: 20px;
 }
 
-blockquote {
+/* =========================
+   HERO SECTION (BACKGROUND IMAGE REQUIRED)
+========================= */
+
+.hero {
+    background-image: url("images/mathbg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 70px 20px;
+    border-radius: 12px;
     text-align: center;
-    max-width: 600px;
-    margin: 20px auto;
-    color: #E2E8F0;
 }
 
-/* my links*/
+/* =========================
+   LINKS
+========================= */
 
 a {
     color: #14B8A6;
@@ -77,76 +74,118 @@ a:hover {
     color: #0f766e;
 }
 
-/* table*/
+/* =========================
+   TABLE (REQUIRED COMPONENT)
+========================= */
 
 .table-container {
-    width: 100%;
     overflow-x: auto;
 }
 
 .resource-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px auto;
     background: white;
     color: #1E3A8A;
-    border: 2px solid #14B8A6;
+    margin: 20px 0;
 }
 
 .resource-table th,
 .resource-table td {
-    padding: 12px;
     border: 1px solid #ccc;
+    padding: 12px;
     text-align: center;
 }
 
 .resource-table thead {
-    background-color: #14B8A6;
+    background: #14B8A6;
     color: white;
 }
 
 .resource-table tbody tr:nth-child(odd) {
-    background-color: #E0F2F1;
+    background: #E0F2F1;
 }
 
-/* my footer */
+/* =========================
+   IMAGE ANIMATION (REQUIRED)
+========================= */
+
+img {
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     text-align: center;
-    margin-top: 20px;
+    padding: 20px;
 }
-
-/* added footer icons */
 
 .footer-icons {
     margin-top: 10px;
 }
 
-.footer-icons a {
+.footer-icons i {
     margin: 0 10px;
     font-size: 24px;
     color: #14B8A6;
-    display: inline-block;
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
-.footer-icons a:hover {
+.footer-icons i:hover {
     transform: scale(1.3);
     color: #0f766e;
-    text-shadow: 0 0 10px rgba(20, 184, 166, 0.7);
 }
-@media (max-width: 600px) {
+
+/* =========================
+   MEDIA QUERY (MOBILE LAYOUT CHANGE REQUIRED)
+========================= */
+
+@media (max-width: 768px) {
+
     body {
         font-size: 14px;
     }
 
     h1 {
-        font-size: 36px;
+        font-size: 32px;
     }
 
-    .resource-table th,
-    .resource-table td {
-        padding: 8px;
-        font-size: 14px;
+    main {
+        padding: 10px;
+    }
+
+    .hero {
+        padding: 40px 10px;
+    }
+}
+
+/* =========================
+   PRINT QUERY (REQUIRED)
+========================= */
+
+@media print {
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    nav,
+    .hamburger,
+    footer {
+        display: none;
+    }
+
+    h1 {
+        color: black;
+        text-shadow: none;
     }
 }

@@ -37,14 +37,15 @@ p {
     padding: 40px 20px;
 }
 
-a {
-    color: white; /* Set links to white */
-    text-decoration: none; /* Remove underline */
+/* Links on the Reflection page */
+.reflection-page a {
+    color: #1E3A8A; /* Blue color for links */
+    text-decoration: none;
 }
 
-a:hover {
-    color: #14B8A6; /* Optional: Add color change on hover */
-    text-decoration: underline; /* Optional: Underline on hover */
+.reflection-page a:hover {
+    color: #0f4a63; /* Darker blue on hover */
+    text-decoration: underline;
 }
 
 .table-container {

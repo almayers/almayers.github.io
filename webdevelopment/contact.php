@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+
+<link rel="shortcut icon" href="images/math.ico">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+
+<header>
+<img src="images/MayersLogo.png" alt="Mayers Math Logo">
+
+<button class="hamburger">☰</button>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+
+<li><a href="mathcontent.html">Math Content</a>
+<ul class="dropdown">
+<li><a href="exponents.html">Exponents</a></li>
+<li><a href="linearequations.html">Linear Equations</a></li>
+<li><a href="expressions.html">Algebraic Expressions</a></li>
+</ul>
+</li>
+
+<li><a href="reflection.html">Reflection</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+
+<section class="contact-container">
+
+<h1>Contact Me</h1>
+
+<form>
+
+<div class="form-group">
+<label for="title">Title</label>
+<select id="title" name="title" required>
+<option value="">Select</option>
+<option>Mr.</option>
+<option>Ms.</option>
+<option>Mrs.</option>
+<option>Dr.</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="name">Full Name</label>
+<input type="text" id="name" name="name" required>
+</div>
+
+<div class="form-group">
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" required>
+</div>
+
+<div class="form-group">
+<label for="topic">Reason for Contact</label>
+<select id="topic" name="topic" required>
+<option value="">Select</option>
+<option>Question</option>
+<option>Feedback</option>
+<option>Help</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="message">Message</label>
+<textarea id="message" name="message" required></textarea>
+</div>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+<p> 2026 Amy Mayers</p>
+<p>Email: amy@example.com | Phone: (123) 456-7890</p>
+
+<div class="footer-icons">
+<i class="fas fa-envelope" aria-label="Email icon"></i>
+<i class="fas fa-phone" aria-label="Phone icon"></i>
+</div>
+</footer>
+
+<script>
+document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('nav ul').classList.toggle('active');
+});
+</script>
+
+</body>
+</html>

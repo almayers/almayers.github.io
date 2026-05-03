@@ -35,6 +35,9 @@ p {
     max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
+    background: url('https://raw.githubusercontent.com/YourUsername/YourRepo/PathToImages/background1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #E2E8F0; 
 }
 
 a {
@@ -90,7 +93,7 @@ a:hover {
     text-decoration: none;
     display: block;
     width: 200px; 
-    margin: 20px auto;
+    margin: 20px auto; 
 }
 
 .resume-link:hover {
@@ -148,32 +151,6 @@ footer {
     color: #14B8A6;
 }
 
-.resource-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.resource-links a {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px 0;
-    background-color: white;
-    color: #14B8A6;
-    border: 2px solid #14B8A6;
-    text-decoration: none;
-    border-radius: 5px;
-    width: 250px; 
-    text-align: center;
-}
-
-.resource-links a:hover {
-    background-color: #14B8A6;
-    color: white;
-}
-
 @media (max-width: 768px) {
     body {
         font-size: 14px;
@@ -184,7 +161,7 @@ footer {
     }
 
     .about-grid {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
 
     .hamburger {
@@ -208,5 +185,21 @@ footer {
     nav ul li ul.dropdown {
         position: static;
         background-color: #142a66;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .resume-link {
+        width: 250px; 
+    }
+}
+
+@media (min-width: 1025px) {
+    .hero {
+        padding: 80px 40px;
     }
 }

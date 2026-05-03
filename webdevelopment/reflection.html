@@ -1,54 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reflection and Resources</title>
-
-<link rel="shortcut icon" href="images/math.ico">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="nav.css">
-</head>
-
-<body>
-
-<header>
-<img src="images/MayersLogo.png" alt="Mayers Math Logo">
-
-<button class="hamburger">☰</button>
-
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-
-<li><a href="mathcontent.html">Math Content</a>
-<ul class="dropdown">
-<li><a href="exponents.html">Exponents</a></li>
-<li><a href="linearequations.html">Linear Equations</a></li>
-<li><a href="expressions.html">Algebraic Expressions</a></li>
-</ul>
-</li>
-
-<li><a href="reflection.html">Reflection</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</header>
-
 <main>
 
 <section class="reflection-box">
 
 <h1>Reflection and Learning Resources</h1>
 
-<h2>Reflection</h2>
+<!-- 🔗 ANCHOR LINKS (REQUIRED) -->
+<nav class="page-links">
+    <a href="#reflection">Reflection</a>
+    <a href="#resources">Resources</a>
+    <a href="#table">Table</a>
+</nav>
+
+<!-- SECTION 1 -->
+<h2 id="reflection">Reflection</h2>
 
 <p>
-Creating this Algebra website helped me understand how web design can support learning.
+Creating this Algebra website helped me understand how web design supports learning.
 </p>
 
 <p>
@@ -59,14 +26,20 @@ I improved my HTML and CSS skills through this project.
 Overall, this project shows how technology enhances education.
 </p>
 
-<h2>Math Resources</h2>
+<!-- SECTION 2 -->
+<h2 id="resources">Math Resources</h2>
 
 <ul>
-<li><a href="https://www.khanacademy.org/math/algebra" target="_blank">Khan Academy</a></li>
-<li><a href="https://www.mathsisfun.com/algebra/index.html" target="_blank">Math is Fun</a></li>
+    <li><a href="https://www.khanacademy.org/math/algebra" target="_blank">Khan Academy</a></li>
+    <li><a href="https://www.mathsisfun.com/algebra/index.html" target="_blank">Math is Fun</a></li>
 </ul>
 
+<!-- SECTION 3 -->
+<h2 id="table">Algebra Table</h2>
+
+<div class="table-container">
 <table class="resource-table">
+
 <thead>
 <tr>
 <th>Topic</th>
@@ -97,32 +70,13 @@ Overall, this project shows how technology enhances education.
 
 <tfoot>
 <tr>
-<td colspan="3">These resources support independent learning.</td>
+<td colspan="3">Resources support independent learning</td>
 </tr>
 </tfoot>
 
 </table>
+</div>
 
 </section>
 
 </main>
-
-<footer>
-<p>&copy; 2026 Amy Mayers</p>
-<p>Email: amy@example.com</p>
-<p>Phone: (123) 456-7890</p>
-
-<div class="footer-icons">
-<i class="fas fa-envelope"></i>
-<i class="fas fa-phone"></i>
-</div>
-</footer>
-
-<script>
-document.querySelector('.hamburger').onclick = () => {
-document.querySelector('nav ul').classList.toggle('active');
-};
-</script>
-
-</body>
-</html>

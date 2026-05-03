@@ -1,90 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Linear Equations</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linear Equations</title>
 
-    <link rel="shortcut icon" href="images/math.ico">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="nav.css">
+<link rel="shortcut icon" href="images/math.ico">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="nav.css">
 </head>
 
 <body>
 
 <header>
-    <img src="images/MayersLogo.png" alt="Mayers Math Logo">
+<img src="images/MayersLogo.png" alt="Mayers Math Logo">
 
-    <span class="hamburger">&#9776;</span>
+<button class="hamburger">☰</button>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
 
-            <li>
-                <a href="mathcontent.html">Math Content</a>
-                <ul class="dropdown">
-                    <li><a href="exponents.html">Exponents</a></li>
-                    <li><a href="linearequations.html">Linear Equations</a></li>
-                    <li><a href="expressions.html">Algebraic Expressions</a></li>
-                </ul>
-            </li>
+<li>
+<a href="mathcontent.html">Math Content</a>
+<ul class="dropdown">
+<li><a href="exponents.html">Exponents</a></li>
+<li><a href="linearequations.html">Linear Equations</a></li>
+<li><a href="expressions.html">Algebraic Expressions</a></li>
+</ul>
+</li>
 
-            <li><a href="reflection.html">Reflection and Resources</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<li><a href="reflection.html">Reflection</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
 </header>
 
 <main>
 
 <section class="content-section">
 
-    <h1>Linear Equations</h1>
+<h1>Linear Equations</h1>
 
-    <p>
-        Students will solve one-variable linear equations using inverse operations and properties of equality.
-    </p>
+<p>Students will solve one-variable linear equations using inverse operations.</p>
 
-    <h3>What is a Linear Equation?</h3>
-    <p>
-        A linear equation is an equation where the highest power of the variable is 1.
-    </p>
+<h3>Example</h3>
 
-    <figure>
-        <img src="images/inverse.png" alt="Solving Linear Equation Example">
-        <figcaption>Example: x + 5 = 12</figcaption>
-    </figure>
+<figure>
+<img src="images/inverse.png" alt="Linear Equation Example">
+<figcaption>x + 5 = 12</figcaption>
+</figure>
 
-    <h3>Steps to Solve</h3>
-    <ol>
-        <li>Identify the variable</li>
-        <li>Use inverse operations</li>
-        <li>Isolate the variable</li>
-        <li>Check your answer</li>
-    </ol>
+<h3>Steps</h3>
+<ol>
+<li>Identify variable</li>
+<li>Use inverse operations</li>
+<li>Isolate variable</li>
+<li>Check answer</li>
+</ol>
 
-    <a href="https://www.youtube.com/watch?v=d6L-ptO-5X0" target="_blank">
-        Watch Linear Equations Video
-    </a>
+<!-- ✅ EMBEDDED VIDEO -->
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/d6L-ptO-5X0"
+title="Linear Equations Video"
+allowfullscreen></iframe>
 
 </section>
 
 </main>
 
 <footer>
-    <p>Amy Mayers — April 19, 2026</p>
+<p>&copy; 2026 Amy Mayers</p>
+<p>Email: fake@email.com</p>
+<p>Phone: (123) 456-7890</p>
+
+<div class="footer-icons">
+<i class="fas fa-envelope"></i>
+<i class="fas fa-phone"></i>
+</div>
 </footer>
 
 <script>
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('nav ul');
-
-hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-});
+document.querySelector('.hamburger').onclick = () => {
+document.querySelector('nav ul').classList.toggle('active');
+};
 </script>
 
 </body>
